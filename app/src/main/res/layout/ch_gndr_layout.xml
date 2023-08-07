@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayy"
+    android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/statcs"
+                    android:textColor="@color/AppBlue"
+                    android:textSize="@dimen/dimen_14sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_cts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardElevation="@dimen/_8sdp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_prpl"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_5sdp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_5sdp">
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/dimen_14sp"
+                                        android:textStyle="normal" />
+
+
+                                    <TextView
+                                        android:id="@+id/cts_higt_vws"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/dimen_18sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+
+                                <include layout="@layout/vid_view_bar_chartcts" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/cts_view_graph"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:background="@drawable/bg1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:padding="@dimen/_5sdp"
+                            android:text="view more"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="@string/statcs_cnt"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/male_feml_spnr"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/editstyle_new"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#27599B" />
+
+
+                    <Spinner
+                        android:id="@+id/cnt_prnctg_spnr"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/editstyle_new"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#27599B"
+                        android:visibility="gone" />
+
+
+                    <Spinner
+                        android:id="@+id/empsts_spnr"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/editstyle_new"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#27599B" />
+
+                    <Spinner
+                        android:id="@+id/mrdsts_spnr"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/editstyle_new"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#27599B" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:divider="@drawable/divider_ss"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:showDividers="middle">
+
+
+
+
+                    <TableRow
+                        android:background="#1976D2"
+                        android:padding="10dp">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:text="Age Group"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Supporters"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_13sp"
+                            android:textStyle="normal" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="start"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:text="Super Supporters"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_13sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="start"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:text="Emp. Status"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_13sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="start"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:text="Marital Status"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_13sp"
+                            android:textStyle="normal" />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#C2185B"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="15-25"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="start"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="25-35"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="start"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="35-45"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="start"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="45-55"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#F0F7F7"
+                        android:padding="5dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="15-25"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tr_sprts_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tr_spr_sprts_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/empsts_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mrtlsts_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+
+
+
+                    <TableRow
+                        android:background="#F0F7F7"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="25-35"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sprt_cnt25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/spr_sprt_cnt25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/empsts_cnt25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mrtlsts_cnt25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F0F7F7"
+                        android:id="@+id/fl_sts_cnt"
+                        android:visibility="gone"
+                        >
+
+                        <ProgressBar
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            />
+
+
+                    </FrameLayout>
+
+                    <TableRow
+                        android:background="#F0F7F7"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="35-50"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/sprts_cnt35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/spr_sprts_cnt35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/empsts_cnt35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mrtlsts_cnt35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#F0F7F7"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="50-75"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/sprts_cnt50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/spr_sprts_cnt50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/empsts_cnt50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mrtlsts_cnt50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="@string/statcs_prcnt"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/male_feml_spnr_prcnt"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/editstyle_new"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#27599B" />
+
+
+                    <Spinner
+                        android:id="@+id/empsts_spnr_prcnt"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/editstyle_new"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#27599B" />
+
+                    <Spinner
+                        android:id="@+id/mrdsts_spnr_prcnt"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/editstyle_new"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#27599B" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:divider="@drawable/divider_ss"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:showDividers="middle">
+
+
+                    <TableRow
+                        android:background="#1976D2"
+                        android:padding="10dp">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:text="Age Group"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Supporters"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_13sp"
+                            android:textStyle="normal" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="start"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:text="Super Supporters"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_13sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="start"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:text="Emp. Status"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_13sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="start"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:text="Marital Status"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_13sp"
+                            android:textStyle="normal" />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#C2185B"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="15-25"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="start"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="25-35"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="start"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="35-45"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="start"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="45-55"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#F0F7F7"
+                        android:padding="5dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="15-25"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tr_sprts_prcent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tr_spr_sprts_prcent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/empsts_prcent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mrtlsts_prcent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#F0F7F7"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="25-35"
+                            android:textStyle="bold" />
+
+
+
+                        <TextView
+                            android:id="@+id/sprt_prcnt25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/spr_sprt_prcnt25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/empsts_prcnt25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mrtlsts_prcnt25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F0F7F7"
+                        android:id="@+id/fl_sts_prcnt"
+                        android:visibility="gone"
+                        >
+
+                        <ProgressBar
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            />
+
+
+                    </FrameLayout>
+
+                    <TableRow
+                        android:background="#F0F7F7"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="35-50"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/sprts_prcnt35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/spr_sprts_prcnt35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/empsts_prcnt35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mrtlsts_prcnt35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#F0F7F7"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="50-75"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/sprts_prcnt50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/spr_sprts_prcnt50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/empsts_prcnt50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mrtlsts_prcnt50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

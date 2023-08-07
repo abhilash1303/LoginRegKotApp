@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:padding="@dimen/dimen_15dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/channel_pic_sub_cmnt"
+            android:layout_width="@dimen/dimen_35dp"
+            android:layout_height="@dimen/dimen_35dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:src="@drawable/usr_picc" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/edit_commnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_rounded_corner_bg"
+            android:hint="comment here"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="yesExcludeDescendants"
+            android:inputType="text"
+            android:padding="@dimen/dimen_10dp"
+            android:textColor="@color/black_effective"
+            android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+<!--        <EditText-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/edit_commnt"-->
+<!--            android:hint="@string/comment_here"-->
+<!--            android:layout_weight="1"-->
+<!--            android:imeOptions="actionDone"-->
+<!--            android:background="@null"-->
+<!--            android:paddingTop="@dimen/dimen_5dp"-->
+<!--            android:paddingStart="@dimen/dimen_10dp"-->
+<!--            android:paddingBottom="@dimen/dimen_5dp"-->
+<!--            android:layout_marginTop="@dimen/dimen_5dp"-->
+<!--            tools:ignore="RtlSymmetry" />-->
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/send_commnett"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@android:drawable/ic_menu_send"
+            app:fabCustomSize="@dimen/dimen_35dp" />
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_commnetss"
+        android:padding="@dimen/dimen_5dp"
+        />
+
+    </LinearLayout>

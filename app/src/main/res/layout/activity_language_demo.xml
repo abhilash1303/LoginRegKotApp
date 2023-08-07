@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".LoginSignupOtp.LanguageActivityDemo">
+
+
+    <TextView
+        android:id="@+id/textView1112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_regular"
+        android:padding="@dimen/dimen_20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:text="Language" />
+
+    <TextView
+        android:id="@+id/textView112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_regular"
+        android:padding="@dimen/dimen_20dp"
+        android:textColor="@color/black_effective_light"
+        android:text="Select your Preferred Language" />
+
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:padding="@dimen/dimen_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:tag="Kannada"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Kannada" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:padding="@dimen/dimen_10dp"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:tag="English"
+            android:text="English" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:padding="@dimen/dimen_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:fontFamily="@font/poppins_regular"
+            android:tag="Telugu"
+            android:text="Telugu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:padding="@dimen/dimen_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:onClick="onCheckboxClicked"
+            android:tag="Tamil"
+            android:text="Tamil" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:padding="@dimen/dimen_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:fontFamily="@font/poppins_regular"
+            android:tag="Hindi"
+            android:text="Hindi" />
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/dimen_10dp"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:tag="Marathi"
+            android:visibility="gone"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Marathi" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dimen_10dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/dimen_10dp"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:fontFamily="@font/poppins_regular"
+            android:tag="Gujarathi"
+            android:text="Gujarathi" />
+
+        <CheckBox
+            android:id="@+id/checkBox8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:padding="@dimen/dimen_10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:tag="Assami"
+            android:text="Assami" />
+
+        <CheckBox
+            android:id="@+id/checkBox9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10dp"
+            android:onClick="onCheckboxClicked"
+            android:fontFamily="@font/poppins_regular"
+            android:tag="Malayalam"
+            android:text="Malayalam" />
+
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/button1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Button" />-->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/continuee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_screen1"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:text="Continue" />
+
+        <RelativeLayout
+            android:id="@+id/blur_reg_lang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.75"
+            android:background="#000"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

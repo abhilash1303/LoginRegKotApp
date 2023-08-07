@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_cnt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white"
+    >
+
+
+<!--    android:background="@drawable/shadow_round"-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollabledd"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/reg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Connect "
+                android:textColor="@color/black_effective"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/asscote_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text=""
+                android:textColor="#1a1a1a"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewdate"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#B19D9D" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Name: "
+                android:textColor="@color/black_effective_light"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/cnt_assoc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black_effective"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Phone : "
+                android:textColor="@color/black_effective_light"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/cnt_assoc_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black_effective"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppins_regular"
+                android:text="email: "
+                android:textColor="@color/black_effective_light"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/cnt_assoc_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black_effective"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Enter Budget"
+
+            android:padding="@dimen/_10sdp"
+            android:textColor="#9E9A9A"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+
+        <EditText
+            android:id="@+id/edit_amnt_budget"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/editstyle1"
+            android:gravity="center_vertical"
+            android:hint="Budget should be more than 500"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:textColor="#1a1a1a"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Or"
+            android:textAlignment="center"
+            android:textColor="#9E9A9A"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+
+        <Spinner
+            android:id="@+id/select_budgt_spinr"
+            style="@android:style/Widget.Material.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/editstyle1"
+            android:spinnerMode="dialog"
+            android:tooltipText="select product"
+            android:visibility="gone" />
+
+        <!--        style="@android:style/Widget.Material.ActionBar.Solid"-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:fontFamily="@font/poppins_regular"
+            android:text="How soon you want service ?"
+            android:textColor="@color/black_effective_light"
+            android:textSize="15sp" />
+
+
+        <Spinner
+            android:id="@+id/servc_spinr"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:background="@drawable/editstyle_new"
+            android:spinnerMode="dropdown"
+            android:textColor="#27599B" />
+
+
+<!--     <Spinner-->
+<!--            android:id="@+id/servc_spinr"-->
+<!--            style="@android:style/Widget.Material.Spinner"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:background="@drawable/editstyle1"-->
+<!--            android:spinnerMode="dialog"-->
+<!--            android:tooltipText="select product" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Enter Your Requiremnet"
+            android:textColor="@color/black_effective_light"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+
+
+
+        <EditText
+            android:id="@+id/edit_query"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="4dp"
+            android:gravity="left"
+            android:hint="Write your requirement."
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:background="@drawable/editstyle1"
+            android:textColor="@color/black_effective"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:visibility="visible" />
+
+<!--        -->
+
+<!--        <EditText-->
+<!--            android:id="@+id/edit_query"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/shadow_round"-->
+<!--            android:fontFamily="@font/poppins_regular"-->
+<!--            android:gravity="left"-->
+<!--            android:hint="I need service of, how much does it cost"-->
+<!--            android:overScrollMode="always"-->
+<!--            android:padding="10dp"-->
+<!--            android:imeOptions="actionDone"-->
+<!--            android:scrollbarStyle="insideInset"-->
+<!--            android:scrollbars="vertical"-->
+<!--            android:textColor="#1a1a1a"-->
+<!--            android:textSize="15sp" />-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Name"
+            android:textColor="#1a1a1a"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shadow_round"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:maxLength="200"
+            android:padding="6dp"
+            android:textColor="#1a1a1a"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Email"
+            android:textColor="#1a1a1a"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shadow_round"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLength="200"
+            android:padding="6dp"
+            android:textColor="#1a1a1a"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Number"
+            android:textColor="#1a1a1a"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/edit_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shadow_round"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="200"
+            android:padding="6dp"
+            android:textColor="#1a1a1a"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/scrollabledd"
+        android:visibility="visible"
+        android:layout_margin="@dimen/_10sdp"
+        android:weightSum="1">
+
+
+        <Button
+            android:id="@+id/cancel_dialog"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_orange"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/submit_dialog"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_teal"
+            android:gravity="center"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

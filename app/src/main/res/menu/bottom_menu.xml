@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/btm_dashbrd"
+        android:icon="@drawable/ic_dshbrd"
+        android:title="@string/b_dashh" />
+
+ <item
+        android:id="@+id/btm_cuties"
+        android:icon="@drawable/cuties"
+     android:iconTint="@color/white"
+        android:title="@string/b_cutiess" />
+
+
+    <item
+        android:id="@+id/btm_home"
+        android:title="@string/b_home"
+        android:icon="@drawable/ic_ondmndvid"
+      />
+
+    <item
+        android:id="@+id/btm_exprt"
+        android:title="Learn"
+        android:icon="@drawable/ic_exprt"
+        />
+
+    <item
+        android:id="@+id/btm_profle"
+        android:title="Connect"
+        android:icon="@drawable/ic_profl"
+        />
+
+<!--    <item-->
+<!--        android:id="@+id/btm_subscib"-->
+<!--        android:title="Earn"-->
+<!--        android:icon="@drawable/ic_subscrt"-->
+<!--        />-->
+
+<!--    <item-->
+<!--        android:id="@+id/btm_finance"-->
+<!--        android:title="View More"-->
+<!--        android:icon="@drawable/ic_money"-->
+<!--        />-->
+
+<!--  android:iconTint="#1a1a1a" -->
+
+
+
+</menu>

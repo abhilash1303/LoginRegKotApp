@@ -1,0 +1,277 @@
+package www.rahagloball.loginregkotapp.adapters
+
+import android.annotation.SuppressLint
+import android.app.Activity
+import android.app.Dialog
+import android.content.Intent
+import android.os.Build
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.MotionEvent
+import android.view.View
+import android.view.ViewGroup
+import android.widget.EditText
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.RadioButton
+import android.widget.RadioGroup
+import android.widget.Spinner
+import android.widget.TextView
+import android.widget.Toast
+import androidx.cardview.widget.CardView
+import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.google.android.material.bottomsheet.BottomSheetDialog
+import de.hdodenhof.circleimageview.CircleImageView
+import retrofit2.Call
+import retrofit2.Response
+import www.rahagloball.loginregkotapp.configuration.Configs
+import www.rahagloball.loginregkotapp.configuration.Utils
+import www.rahagloball.loginregkotapp.R
+import www.rahagloball.loginregkotapp.SessionManager
+import www.rahagloball.loginregkotapp.constsnsesion.Constants
+import www.rahagloball.loginregkotapp.models.GlobalCallback
+import www.rahagloball.loginregkotapp.models.RetrofitClient
+import www.rahagloball.loginregkotapp.models.newvidsinglelist.DataItem
+import www.rahagloball.loginregkotapp.models.relvidsubcat.RelChannel
+import www.rahagloball.loginregkotapp.models.relvidsubcat.RelVid
+import www.rahagloball.loginregkotapp.playerss.PlayerHomeRel
+
+//import www.nationlearnsraha.com.Configuration.Config;
+//import www.nationlearnsraha.com.ConstantAndSession.Constants;
+//import www.nationlearnsraha.com.ConstantAndSession.SessionManager;
+//import www.nationlearnsraha.com.Model.GlobalCallback;
+//import www.nationlearnsraha.com.Model.Pojo.newvidsinglelist.DataItem;
+//import www.nationlearnsraha.com.Model.Pojo.relvidsubcat.RelChannel;
+//import www.nationlearnsraha.com.Model.Pojo.relvidsubcat.RelVid;
+//import www.nationlearnsraha.com.Model.RetrofitClient;
+//import www.nationlearnsraha.com.R;
+//import www.nationlearnsraha.com.videosdemo.PlayerHomeRel;
+////import www.nationlearnsraha.com.videosdemo.PlayerHomeRel;
+class RelVidListAdapter(allFollowList: List<RelVid>, act: Activity) :
+    RecyclerView.Adapter<RelVidListAdapter.ViewHolder>() {
+    private var dataSet: List<RelVid> = ArrayList<RelVid>()
+    private val mContext: Activity
+    var card_learn: CardView? = null
+    var id: String? = null
+    var vid_di: DataItem? = null
+    private var mBottomSheetDialog: BottomSheetDialog? = null
+    var bottomSheetLayout: View? = null
+    var submit_dialog: TextView? = null
+    var cancel_dialog: TextView? = null
+    var edit_query: EditText? = null
+    var token: String? = null
+    var btm_report_vid: TextView? = null
+    var btm_share_vid: TextView? = null
+    var btnspinner: Spinner? = null
+    var rankDialog: Dialog? = null
+    var radio_report: RadioGroup? = null
+    var radioButton: RadioButton? = null
+    var edit_query_str: String? = null
+    var radioButton_str: String? = null
+    var manager: SessionManager? = null
+
+    init {
+        dataSet = allFollowList
+        mContext = act
+    }
+
+    override fun onCreateViewHolder(
+        viewGroup: ViewGroup,
+        i: Int
+    ): ViewHolder {
+        val view: View = LayoutInflater.from(viewGroup.getContext())
+            .inflate(R.layout.ern_vidlist_adptr, viewGroup, false)
+        manager = SessionManager()
+        token = manager?.getPreferences(mContext, Constants.USER_TOKEN_LRN)
+        return ViewHolder(view)
+    }
+
+    @SuppressLint("ClickableViewAccessibility")
+    override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
+        val postreq: TextView = viewHolder.videoTitle
+        val channel_name: TextView = viewHolder.channel_name
+        val checkImage = viewHolder.videoThumbnail
+        val qid: TextView = viewHolder.idd
+        val views_vid: TextView = viewHolder.views_vid
+        val time_line: TextView = viewHolder.time_line
+        val channel_pic: CircleImageView = viewHolder.channel_pic
+        card_learn = viewHolder.card_learn
+        val ll_more_optionss: LinearLayout = viewHolder.ll_more_optionss
+        val cst_dd: String? = dataSet[i].id
+        try {
+            val relVid: RelVid = dataSet[i]
+            val videoii: String? = dataSet[i].video
+            val title_cat: String? = relVid.title
+            postreq.setText(title_cat)
+            val prev_img: String =
+                Configs.BASE_URL21 + "images/pool/preview/" + relVid.previewImage
+            Glide.with(mContext).load(prev_img).into(checkImage)
+            val qid_str: String? = relVid.id
+            val time_line_str: String? = relVid.createdAt
+            time_line.setText(time_line_str)
+            val views_vid_str: String? = relVid.viewsCount
+            val shortenedViews: String? = views_vid_str?.let { Utils.getShortenedViewsString(it.toInt()) }
+            views_vid.setText("$shortenedViews Views")
+            viewHolder.vv.setOnClickListener { v: View ->
+                val b = Bundle()
+                b.putSerializable("videoData", dataSet[i])
+                val qid_str1: String? = relVid.id
+                manager = SessionManager()
+                token = manager?.getPreferences(mContext, Constants.USER_TOKEN_LRN)
+                RetrofitClient.getClient().add_viewss(
+                    qid_str1,
+                    "application/json",
+                    "Bearer $token"
+                )?.enqueue(object : GlobalCallback<String?>(edit_query) {
+                    override    fun onResponse(call: Call<String?>, response: Response<String?>) {
+                        if (response.isSuccessful) {
+//                            Toast.makeText(mContext, "View Added", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                })
+                val i222 = Intent(mContext, PlayerHomeRel::class.java)
+                i222.putExtras(b)
+                i222.putExtra("video_id", qid_str1)
+                v.context.startActivity(i222)
+            }
+            ll_more_optionss.setOnClickListener(View.OnClickListener { view: View? ->
+                bottomSheetLayout =
+                    LayoutInflater.from(mContext).inflate(R.layout.vidoe_moreoptions, null)
+                btm_report_vid = bottomSheetLayout?.findViewById<TextView>(R.id.btm_report_vid)
+                btm_share_vid = bottomSheetLayout?.findViewById<TextView>(R.id.btm_share_vid)
+                btm_share_vid?.setOnClickListener(View.OnClickListener { view1: View? ->
+                    val vidddurlll: String? = relVid.video
+                    val videoo_idd: String? = relVid.id
+                    if (vidddurlll != null) {
+                        if (vidddurlll.contains(" ")) {
+                            val title_str1: String? = relVid.title
+                            val newString = vidddurlll.replace(" ", "%20")
+                            val vidd_urll: String =
+                                Configs.BASE_URL21 + "video/" + videoo_idd + "/" + newString
+                            val sharingIntent = Intent(Intent.ACTION_SEND)
+                            sharingIntent.setType("text/plain")
+                            sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Watch $title_str1")
+                            sharingIntent.putExtra(
+                                Intent.EXTRA_TEXT, "Watch now on NationLearns, " +
+                                        "India's first social e-learning platform " + vidd_urll
+                            )
+                            mContext.startActivity(Intent.createChooser(sharingIntent, "Share via"))
+                        }
+                    }
+                })
+                btm_report_vid?.setOnClickListener(View.OnClickListener { view1: View? ->
+                    rankDialog = Dialog(mContext, R.style.FullHeightDialog)
+                    rankDialog?.setContentView(R.layout.dialog_vid_report)
+                    rankDialog!!.setCancelable(true)
+                    edit_query = rankDialog?.findViewById<EditText>(R.id.edit_query)
+                    submit_dialog = rankDialog?.findViewById<TextView>(R.id.submit_dialog)
+                    cancel_dialog = rankDialog?.findViewById<TextView>(R.id.cancel_dialog)
+                    radio_report = rankDialog?.findViewById<RadioGroup>(R.id.radio_report)
+                    edit_query?.setOnTouchListener(View.OnTouchListener { view2: View, event: MotionEvent ->
+                        // TODO Auto-generated method stub
+                        if (view2.id == R.id.edit_query) {
+                            view2.parent.requestDisallowInterceptTouchEvent(true)
+                            when (event.getAction() and MotionEvent.ACTION_MASK) {
+                                MotionEvent.ACTION_UP -> view2.parent.requestDisallowInterceptTouchEvent(
+                                    false
+                                )
+                            }
+                        }
+                        false
+                    })
+                    submit_dialog?.setOnClickListener(View.OnClickListener { view4: View? ->
+                        radio_report = rankDialog?.findViewById<RadioGroup>(R.id.radio_report)
+                        edit_query_str = edit_query?.text.toString()
+                        val selectedId: Int? = radio_report?.checkedRadioButtonId
+                        radioButton = selectedId?.let { rankDialog?.findViewById<RadioButton>(it) }
+                        radioButton_str = radioButton?.text as String?
+                        if (selectedId == -1) {
+                            Toast.makeText(mContext, "Report something!", Toast.LENGTH_SHORT).show()
+                        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
+                            if (edit_query_str == "" || edit_query_str!!.isEmpty()) {
+                                Toast.makeText(
+                                    mContext,
+                                    "Please Enter Something",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            } else {
+                                val qid_str44: String? = relVid.id
+                                manager = SessionManager()
+                                token = manager?.getPreferences(mContext, Constants.USER_TOKEN_LRN)
+                                RetrofitClient.getClient().vid_reportt(
+                                    qid_str44, radioButton_str, edit_query_str,
+                                    "application/json",
+                                    "Bearer $token"
+                                )?.enqueue(object : GlobalCallback<String?>(edit_query) {
+                                    override  fun onResponse(
+                                        call: Call<String?>,
+                                        response: Response<String?>
+                                    ) {
+                                        val languagestr  = response.body()?.toString()
+                                        rankDialog!!.dismiss()
+                                        if (languagestr != null) {
+                                            if (languagestr.contains("1")) {
+                                                Toast.makeText(
+                                                    mContext,
+                                                    "Report Successful!",
+                                                    Toast.LENGTH_SHORT
+                                                ).show()
+                                                rankDialog!!.dismiss()
+                                            }
+                                        }
+                                    }
+                                })
+                            }
+                        }
+                    })
+                    cancel_dialog?.setOnClickListener(View.OnClickListener { vv: View? -> rankDialog!!.dismiss() })
+                    rankDialog!!.show()
+                })
+                mBottomSheetDialog = BottomSheetDialog(mContext)
+                mBottomSheetDialog?.setContentView(bottomSheetLayout!!)
+                mBottomSheetDialog?.show()
+            })
+            //
+            val channell: RelChannel? = dataSet[i].channel
+            val ch_namee: String? = channell?.name
+            val ch_id: String? = channell?.id
+            val chpool_id: String? = channell?.poolId
+            channel_name.text = ch_namee
+            val checImgSt: String = Configs.BASE_URL21 + "images/channel/" + channell?.image
+            Glide.with(mContext).load(checImgSt).into(channel_pic)
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
+    override fun getItemCount(): Int {
+        return dataSet.size
+    }
+
+    inner class ViewHolder(var vv: View) : RecyclerView.ViewHolder(
+        vv
+    ) {
+        var videoThumbnail: ImageView
+        var channel_pic: CircleImageView
+        var videoTitle: TextView
+        var idd: TextView
+        var channel_name: TextView
+        var views_vid: TextView
+        var time_line: TextView
+        var ll_more_optionss: LinearLayout
+        var card_learn: CardView
+
+        init {
+            videoThumbnail = itemView.findViewById<ImageView>(R.id.videoThumbnail)
+            channel_pic = itemView.findViewById<CircleImageView>(R.id.channel_pic)
+            idd = itemView.findViewById<TextView>(R.id.idd)
+            time_line = itemView.findViewById<TextView>(R.id.time_line)
+            channel_name = itemView.findViewById<TextView>(R.id.channel_name)
+            views_vid = itemView.findViewById<TextView>(R.id.views_vid)
+            videoTitle = itemView.findViewById<TextView>(R.id.videoTitle)
+            card_learn = itemView.findViewById<CardView>(R.id.card_learn)
+            ll_more_optionss = itemView.findViewById<LinearLayout>(R.id.ll_more_optionss)
+        }
+    }
+}

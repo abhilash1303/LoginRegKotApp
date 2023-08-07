@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp"
+        android:scrollbars="none">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_all_videos"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:checked="true"
+                android:text="@string/all_vids"
+                android:textColor="@drawable/rtext_color" />
+
+            <RadioButton
+                android:id="@+id/rb_latest_videos"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/radio_selector"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/latest_videos"
+                android:textColor="@drawable/rtext_color" />
+
+
+            <RadioButton
+                android:id="@+id/rb_trnd_videos"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/trnd_videos"
+                android:textColor="@drawable/rtext_color" />
+
+
+            <RadioButton
+                android:id="@+id/rb_action_supportt"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="@string/action_supportt"
+                android:textColor="@drawable/rtext_color" />
+
+            <RadioButton
+                android:id="@+id/rb_action_ssupportt"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/action_ssupportt"
+                android:textColor="@drawable/rtext_color" />
+
+
+
+            <RadioButton
+                android:id="@+id/rb_misc_videos"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/your_inrst_videos"
+                android:textColor="@drawable/rtext_color" />
+
+
+            <!--   <RadioButton-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Right"-->
+            <!--            android:padding="@dimen/_10sdp"-->
+            <!--            android:layout_margin="@dimen/_10sdp"/>-->
+
+
+        </RadioGroup>
+
+
+    </HorizontalScrollView>
+
+
+    <Spinner
+        android:id="@+id/all_vid_spinner"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/bg_teal"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+
+    <FrameLayout
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/no_dat_img"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="150dp"
+            android:background="@drawable/nodata" />
+
+    </FrameLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shimmer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/vidlist_shimmer"/>
+            <include layout="@layout/vidlist_shimmer"/>
+            <include layout="@layout/vidlist_shimmer"/>
+
+
+        </LinearLayout>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_all_vid_filter"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>

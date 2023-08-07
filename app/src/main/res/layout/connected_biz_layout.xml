@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/box_design"
+        android:elevation="5dp"
+        android:padding="3dp"
+        app:cardCornerRadius="6dp"
+        app:cardMaxElevation="8dp">
+
+        <www.rahagloball.loginregkotapp.constsnsesion.TriangleLabelView
+            android:id="@+id/blog_icon1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:elevation="3dp"
+            app:backgroundColor="#1CB41F"
+            app:cardElevation="3dp"
+            app:corner="leftTop"
+            app:labelBottomPadding="12dp"
+            app:labelTopPadding="10dp"
+            app:primaryText="Verified"
+            app:primaryTextColor="@android:color/white"
+            app:primaryTextSize="10sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/editstyle_no_padding"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/imageview_cbl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_teal"
+                        android:scaleType="fitXY" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/leadBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="10dp">
+
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/assoname_sc"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginTop="10dp"-->
+                    <!--                        android:drawableEnd="@drawable/tickmark"-->
+                    <!--                        android:drawablePadding="5dp"-->
+                    <!--                        android:fontFamily="@font/poppins_regular"-->
+                    <!--                        android:text=" Associate Name"-->
+                    <!--                        android:textColor="#444"-->
+                    <!--                        android:textSize="12sp" />-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/assoname_cbl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text=""
+                            android:textColor="#444"
+                            android:textSize="12sp" />
+
+
+                        <ImageView
+                            android:id="@+id/verified_tickk"
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/value_20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/dimen_10dp"
+                            android:background="@drawable/tickmark"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/verified_tickk_red"
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/value_20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/dimen_10dp"
+                            android:background="@drawable/tick_ggrey"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/assoname_cbl"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:drawableEnd="@drawable/tickmark"-->
+<!--                        android:drawablePadding="5dp"-->
+<!--                        android:fontFamily="@font/poppins_regular"-->
+<!--                        android:text=""-->
+<!--                        android:textColor="#444"-->
+<!--                        android:textSize="12sp" />-->
+
+                    <TextView
+                        android:id="@+id/email_cbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="#444"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:id="@+id/number_cbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="#444"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:id="@+id/city_cbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="#444"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:id="@+id/prodct_cbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:visibility="gone"
+                        android:textColor="#444"
+                        android:textSize="12sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/ll_connected"
+                        android:orientation="horizontal">
+
+
+<!--                        <pl.droidsonroids.gif.GifImageView-->
+<!--                            android:id="@+id/dancer"-->
+<!--                            android:layout_width="@dimen/value_20dp"-->
+<!--                            android:layout_height="@dimen/value_20dp"-->
+<!--                            />-->
+
+<!--                        android:src="@drawable/greenn"-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center_vertical"
+                            android:text="Connected"
+                            android:textColor="@color/dark_green"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_waiting_cnct"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+<!--                        <pl.droidsonroids.gif.GifImageView-->
+<!--                            android:id="@+id/connect_wait"-->
+<!--                            android:layout_width="@dimen/value_20dp"-->
+<!--                            android:layout_height="@dimen/value_20dp"-->
+<!--                            android:src="@drawable/greenn" />-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center_vertical"
+                            android:text="Waiting to connect"
+                            android:textColor="@color/tan_orang"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+
+                        <TextView
+                            android:id="@+id/txtRatingValue_cbl"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.5"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="2.5"
+                            android:textColor="#581212" />
+
+
+                        <RatingBar
+                            android:id="@+id/ratingBar_cbl"
+                            style="@style/Widget.AppCompat.RatingBar.Indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="10dp"
+                            android:scaleX=".5"
+                            android:scaleY=".5"
+                            android:transformPivotX="2dp"
+                            android:transformPivotY="2dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_call_whatsapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/call_cbl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/bg_blue"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Call"
+                            android:textAllCaps="false"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+
+                        <Button
+                            android:id="@+id/whtsapp_cbl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/editstyle_no_padding"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="WhatsApp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black_effective"
+                            android:textSize="10sp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/asso_id_cbl"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="iddd"
+                        android:textColor="#291717"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/blur_reg1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.7"
+                android:background="#FFFFFF"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

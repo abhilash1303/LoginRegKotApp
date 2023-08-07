@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup_listt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:padding="@dimen/dimen_15dp"
+                app:singleLine="false"
+                app:singleSelection="false">
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipfashion"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="Fashion and Beauty"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipmulti"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="multimedia"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipgame"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="Gaming"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipsport"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="Sports"
+                    android:textSize="@dimen/dimen_15sp" />
+
+<!--                chipfashion,chipmulti,chipgame,chipsport,-->
+<!--                chipcareer,chipenter,chiphnf,chipfit,-->
+<!--                chiptech,chipoutdprs,chipanim,chiparts,-->
+<!--                chibiz,chifood,chitevl,chitmusic-->
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipcareer"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="Career"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipenter"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="Entertainment"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chiphnf"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="Home and Family"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipfit"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="Fitness"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chiptech"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="Technology"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipoutdprs"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="Outdoors"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipanim"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="Animation and Comics"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chiparts"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="Arts and Culture"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chibiz"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="Business and Finance"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chifood"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="Food"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chitevl"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="Travel"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chitmusic"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value_5dp"
+                    android:text="Music"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+
+
+
+            </com.google.android.material.chip.ChipGroup>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/continuee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dimen_50dp"
+            android:layout_marginTop="@dimen/dimen_50dp"
+            android:layout_marginEnd="@dimen/dimen_50dp"
+            android:background="@color/bg_screen1"
+            android:text="Proceed"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

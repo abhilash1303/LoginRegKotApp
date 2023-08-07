@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_bg1"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+
+        <TextView
+            android:id="@+id/tool_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/add_announcement"
+            android:textColor="@color/AppBlue"
+            android:textSize="18sp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/all_anncmnts"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/bg_blue"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/all_annmnts"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:text="@string/select_course"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spnr_sel_course"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:background="@drawable/editstyle_new"
+        android:spinnerMode="dropdown"
+        android:textColor="#27599B" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="@string/sel_annnce"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/edit_ques"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:background="@drawable/editstyle1"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Add Question"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:padding="@dimen/dimen_10dp"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="@string/status"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/ques_status"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:background="@drawable/dialog_spinner_background"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/submit_annctmnts"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/bg_blue"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

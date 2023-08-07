@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DFDEDE">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/upload_video"
+                android:textAlignment="center"
+                android:background="@drawable/bg_teal"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/thmbnl_img"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp">
+
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/dfdfdd"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="@dimen/dimen_10dp"-->
+                <!--                    android:fontFamily="@font/poppins_regular"-->
+                <!--                    android:text="@string/upload_video"-->
+                <!--                    android:textAlignment="center"-->
+                <!--                    android:textSize="25sp"-->
+                <!--                    android:textStyle="bold" />-->
+
+                <!--                android:layout_below="@+id/dfdfdd"-->
+
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+
+                    android:background="@drawable/editstyle1"
+                    android:foregroundGravity="center">
+
+
+
+
+                    <ImageView
+                        android:id="@+id/vid_prevw_imgg"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY" />
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/vid_prevw_imgg_btn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="top|center"
+                    android:layout_marginLeft="240dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:background="@drawable/circle_bg"
+                    android:drawableTop="@drawable/edit_icon"
+                    app:fabSize="normal" />
+
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/vid_titlee"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:background="@drawable/editstyle1"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/vid_title"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/dimen_10dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/vid_descc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:background="@drawable/editstyle1"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="top"
+                android:hint="@string/descc"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/dimen_10dp"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/keywords_vid"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:background="@drawable/editstyle1"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="top"
+                android:hint="Enter Keywords ex: #android"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/dimen_10dp"
+                android:textSize="15sp" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Type of Video"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/sel_cuti_vid"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@drawable/editstyle_new"
+                android:spinnerMode="dropdown"
+                android:textColor="#27599B" />
+
+
+            <Spinner
+                android:id="@+id/sel_vid_cat"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@drawable/editstyle_new"
+                android:spinnerMode="dropdown"
+                android:textColor="#27599B"
+                android:visibility="gone" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/select_video_category"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/video_catgryy"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@drawable/editstyle_new"
+                android:spinnerMode="dropdown"
+                android:textColor="#27599B" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Does your video contains any service or product ?" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/cccategory"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <Spinner
+                android:id="@+id/agenttype_spinner"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@drawable/editstyle_new"
+                android:spinnerMode="dropdown"
+                android:textColor="#27599B" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/subccategory"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <Spinner
+                android:id="@+id/subcat_spinner"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@drawable/editstyle_new"
+                android:spinnerMode="dropdown"
+                android:textColor="#27599B" />
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/visible_for"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+
+
+            <Spinner
+                android:id="@+id/sel_visiblity"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@drawable/editstyle_new"
+                android:spinnerMode="dropdown"
+                android:textColor="#27599B" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/sel_lang"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+
+
+            <Spinner
+                android:id="@+id/sel_language"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@drawable/editstyle_new"
+                android:spinnerMode="dropdown"
+                android:textColor="#27599B" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/eighteenplus"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <Spinner
+                android:id="@+id/sel_eightenper"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@drawable/editstyle_new"
+                android:spinnerMode="dropdown"
+                android:textColor="#27599B" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_vid_pv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="add preview video" />
+
+                <RelativeLayout
+                    android:id="@+id/videoLayout_pv"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:background="#00000000">
+
+
+                    <!--                    <VideoView-->
+                    <!--                        android:id="@+id/vid_upld_view_pv"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_alignParentStart="true"-->
+                    <!--                        android:layout_alignParentTop="true"-->
+                    <!--                        android:layout_alignParentEnd="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:layout_marginStart="@dimen/dimen_20dp"-->
+                    <!--                        android:layout_marginTop="@dimen/dimen_20dp"-->
+                    <!--                        android:layout_marginEnd="@dimen/dimen_20dp"-->
+                    <!--                        android:layout_marginBottom="@dimen/dimen_20dp"-->
+                    <!--                        android:fitsSystemWindows="true" />-->
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/upld_videoo_pv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Upload Video"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/videoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:visibility="gone">
+
+
+                <VideoView
+                    android:id="@+id/vid_upld_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_20dp"
+                    android:fitsSystemWindows="true" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/upld_videoo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Upload Video"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_50dp">
+
+
+                <Button
+                    android:id="@+id/submit_videoo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Submit Video"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/progrees_vid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:visibility="gone">
+
+
+        <ProgressBar
+            android:id="@+id/progrees_vid1"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_centerInParent="true"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progrees_vid1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="uploading..."
+            android:textAlignment="center"
+            android:textColor="@color/black_effective"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:background="#DFDEDE">-->
+
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical">-->
+
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="@dimen/dimen_10dp"-->
+    <!--                android:fontFamily="@font/poppins_regular"-->
+    <!--                android:text="Upload"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="25sp"-->
+    <!--                android:textStyle="bold" />-->
+
+
+    <!--            <RelativeLayout-->
+    <!--                android:id="@+id/relative1"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="@dimen/dimen_20dp">-->
+
+
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="120dp"-->
+    <!--                    android:layout_height="120dp"-->
+    <!--                    android:layout_alignParentTop="true"-->
+    <!--                    android:layout_centerHorizontal="true"-->
+    <!--                    android:background="@drawable/editstyle1"-->
+    <!--                    android:foregroundGravity="center">-->
+
+
+    <!--                    <ImageView-->
+    <!--                        android:id="@+id/vid_prevw_imgg"-->
+    <!--                        android:layout_width="120dp"-->
+    <!--                        android:layout_height="120dp"-->
+    <!--                        android:scaleType="fitXY" />-->
+
+    <!--                </RelativeLayout>-->
+
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/vid_prevw_imgg_btn"-->
+    <!--                    android:layout_width="35dp"-->
+    <!--                    android:layout_height="35dp"-->
+    <!--                    android:layout_gravity="top|center"-->
+    <!--                    android:layout_marginLeft="240dp"-->
+    <!--                    android:layout_marginTop="90dp"-->
+    <!--                    android:layout_marginBottom="@dimen/dimen_10dp"-->
+    <!--                    android:background="@drawable/circle_bg"-->
+    <!--                    android:drawableTop="@drawable/edit_icon"-->
+    <!--                    app:fabSize="normal" />-->
+
+
+    <!--            </RelativeLayout>-->
+
+
+    <!--            <EditText-->
+    <!--                android:id="@+id/vid_titlee"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/_40sdp"-->
+    <!--                android:layout_marginLeft="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginRight="@dimen/dimen_20dp"-->
+    <!--                android:background="@drawable/editstyle1"-->
+    <!--                android:fontFamily="@font/poppins_regular"-->
+    <!--                android:hint="@string/vid_title"-->
+    <!--                android:imeOptions="actionNext"-->
+    <!--                android:inputType="text"-->
+    <!--                android:padding="@dimen/dimen_10dp"-->
+    <!--                android:textSize="15sp" />-->
+
+    <!--            <EditText-->
+    <!--                android:id="@+id/vid_descc"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/_40sdp"-->
+    <!--                android:layout_marginLeft="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginTop="@dimen/_10sdp"-->
+    <!--                android:layout_marginRight="@dimen/dimen_20dp"-->
+    <!--                android:background="@drawable/editstyle1"-->
+    <!--                android:fontFamily="@font/poppins_regular"-->
+    <!--                android:gravity="top"-->
+    <!--                android:hint="@string/descc"-->
+    <!--                android:imeOptions="actionNext"-->
+    <!--                android:inputType="text"-->
+    <!--                android:padding="@dimen/dimen_10dp"-->
+    <!--                android:textSize="15sp" />-->
+
+
+    <!--            <EditText-->
+    <!--                android:id="@+id/keywords_vid"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/_40sdp"-->
+    <!--                android:layout_marginLeft="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginTop="@dimen/_10sdp"-->
+    <!--                android:layout_marginRight="@dimen/dimen_20dp"-->
+    <!--                android:background="@drawable/editstyle1"-->
+    <!--                android:fontFamily="@font/poppins_regular"-->
+    <!--                android:gravity="top"-->
+    <!--                android:hint="Enter Keywords ex: #android"-->
+    <!--                android:imeOptions="actionNext"-->
+    <!--                android:inputType="text"-->
+    <!--                android:padding="@dimen/dimen_10dp"-->
+    <!--                android:textSize="15sp" />-->
+
+
+    <!--            <Spinner-->
+    <!--                android:id="@+id/sel_cuti_vid"-->
+    <!--                style="@android:style/Widget.Holo.Light.Spinner"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/_40sdp"-->
+    <!--                android:layout_marginStart="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginTop="@dimen/_10sdp"-->
+    <!--                android:layout_marginEnd="@dimen/dimen_20dp"-->
+    <!--                android:background="@drawable/editstyle_new"-->
+    <!--                android:spinnerMode="dropdown"-->
+    <!--                android:textColor="#27599B" />-->
+
+
+    <!--            <Spinner-->
+    <!--                android:id="@+id/sel_vid_cat"-->
+    <!--                style="@android:style/Widget.Holo.Light.Spinner"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/_40sdp"-->
+    <!--                android:layout_marginStart="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginTop="@dimen/_10sdp"-->
+    <!--                android:layout_marginEnd="@dimen/dimen_20dp"-->
+    <!--                android:background="@drawable/editstyle_new"-->
+    <!--                android:spinnerMode="dropdown"-->
+    <!--                android:textColor="#27599B"-->
+    <!--                android:visibility="gone" />-->
+
+
+    <!--            <Spinner-->
+    <!--                android:id="@+id/video_catgryy"-->
+    <!--                style="@android:style/Widget.Holo.Light.Spinner"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/_40sdp"-->
+    <!--                android:layout_marginStart="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginTop="@dimen/_10sdp"-->
+    <!--                android:layout_marginEnd="@dimen/dimen_20dp"-->
+    <!--                android:background="@drawable/editstyle_new"-->
+    <!--                android:spinnerMode="dropdown"-->
+    <!--                android:textColor="#27599B" />-->
+
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="@dimen/_15sdp"-->
+    <!--                android:layout_marginTop="@dimen/_15sdp"-->
+    <!--                android:fontFamily="@font/poppins_regular"-->
+    <!--                android:text="Does your video contains any service or product ?" />-->
+
+
+    <!--            <Spinner-->
+    <!--                android:id="@+id/agenttype_spinner"-->
+    <!--                style="@android:style/Widget.Holo.Light.Spinner"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/_40sdp"-->
+    <!--                android:layout_marginStart="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginTop="@dimen/_10sdp"-->
+    <!--                android:layout_marginEnd="@dimen/dimen_20dp"-->
+    <!--                android:background="@drawable/editstyle_new"-->
+    <!--                android:spinnerMode="dropdown"-->
+    <!--                android:textColor="#27599B" />-->
+
+
+    <!--            <Spinner-->
+    <!--                android:id="@+id/subcat_spinner"-->
+    <!--                style="@android:style/Widget.Holo.Light.Spinner"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/_40sdp"-->
+    <!--                android:layout_marginStart="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginTop="@dimen/_10sdp"-->
+    <!--                android:layout_marginEnd="@dimen/dimen_20dp"-->
+    <!--                android:background="@drawable/editstyle_new"-->
+    <!--                android:spinnerMode="dropdown"-->
+    <!--                android:textColor="#27599B" />-->
+
+
+    <!--            <Spinner-->
+    <!--                android:id="@+id/sel_visiblity"-->
+    <!--                style="@android:style/Widget.Holo.Light.Spinner"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/_40sdp"-->
+    <!--                android:layout_marginStart="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginTop="@dimen/_10sdp"-->
+    <!--                android:layout_marginEnd="@dimen/dimen_20dp"-->
+    <!--                android:background="@drawable/editstyle_new"-->
+    <!--                android:spinnerMode="dropdown"-->
+    <!--                android:textColor="#27599B" />-->
+
+
+    <!--            <LinearLayout-->
+    <!--                android:id="@+id/ll_vid_pv"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:orientation="vertical"-->
+    <!--                android:visibility="gone">-->
+
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginStart="@dimen/_15sdp"-->
+    <!--                    android:layout_marginTop="@dimen/_15sdp"-->
+    <!--                    android:fontFamily="@font/poppins_regular"-->
+    <!--                    android:text="add preview video" />-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:id="@+id/videoLayout_pv"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="250dp"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:background="#00000000">-->
+
+
+    <!--                    &lt;!&ndash;                    <VideoView&ndash;&gt;-->
+    <!--                    &lt;!&ndash;                        android:id="@+id/vid_upld_view_pv"&ndash;&gt;-->
+    <!--                    &lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+    <!--                    &lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--                    &lt;!&ndash;                        android:layout_alignParentStart="true"&ndash;&gt;-->
+    <!--                    &lt;!&ndash;                        android:layout_alignParentTop="true"&ndash;&gt;-->
+    <!--                    &lt;!&ndash;                        android:layout_alignParentEnd="true"&ndash;&gt;-->
+    <!--                    &lt;!&ndash;                        android:layout_alignParentBottom="true"&ndash;&gt;-->
+    <!--                    &lt;!&ndash;                        android:layout_marginStart="@dimen/dimen_20dp"&ndash;&gt;-->
+    <!--                    &lt;!&ndash;                        android:layout_marginTop="@dimen/dimen_20dp"&ndash;&gt;-->
+    <!--                    &lt;!&ndash;                        android:layout_marginEnd="@dimen/dimen_20dp"&ndash;&gt;-->
+    <!--                    &lt;!&ndash;                        android:layout_marginBottom="@dimen/dimen_20dp"&ndash;&gt;-->
+    <!--                    &lt;!&ndash;                        android:fitsSystemWindows="true" />&ndash;&gt;-->
+
+    <!--                </RelativeLayout>-->
+
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/upld_videoo_pv"-->
+    <!--                    android:layout_width="200dp"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="right"-->
+    <!--                    android:layout_margin="@dimen/dimen_10dp"-->
+    <!--                    android:fontFamily="@font/poppins_regular"-->
+    <!--                    android:text="Upload Video"-->
+    <!--                    android:textColor="#ffffff"-->
+    <!--                    android:textSize="15sp" />-->
+
+
+    <!--            </LinearLayout>-->
+
+
+    <!--            <RelativeLayout-->
+    <!--                android:id="@+id/videoLayout"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="250dp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:background="#00000000">-->
+
+
+    <!--                <VideoView-->
+    <!--                    android:id="@+id/vid_upld_view"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_alignParentStart="true"-->
+    <!--                    android:layout_alignParentTop="true"-->
+    <!--                    android:layout_alignParentEnd="true"-->
+    <!--                    android:layout_alignParentBottom="true"-->
+    <!--                    android:layout_marginStart="@dimen/dimen_20dp"-->
+    <!--                    android:layout_marginTop="@dimen/dimen_20dp"-->
+    <!--                    android:layout_marginEnd="@dimen/dimen_20dp"-->
+    <!--                    android:layout_marginBottom="@dimen/dimen_20dp"-->
+    <!--                    android:fitsSystemWindows="true" />-->
+
+    <!--            </RelativeLayout>-->
+
+
+    <!--            <Button-->
+    <!--                android:id="@+id/upld_videoo"-->
+    <!--                android:layout_width="200dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="right"-->
+    <!--                android:layout_margin="@dimen/dimen_10dp"-->
+    <!--                android:fontFamily="@font/poppins_regular"-->
+    <!--                android:text="Upload Video"-->
+    <!--                android:textColor="#ffffff"-->
+    <!--                android:textSize="15sp" />-->
+
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_margin="@dimen/dimen_50dp">-->
+
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/submit_videoo"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="bottom|center"-->
+    <!--                    android:fontFamily="@font/poppins_regular"-->
+    <!--                    android:text="Submit Video"-->
+    <!--                    android:textColor="#ffffff"-->
+    <!--                    android:textSize="15sp" />-->
+
+
+    <!--            </LinearLayout>-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--    </ScrollView>-->
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/progrees_vid"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:alpha="0.8"-->
+    <!--        android:visibility="gone">-->
+
+
+    <!--                <ProgressBar-->
+    <!--                    android:id="@+id/progrees_vid1"-->
+    <!--                    style="?android:attr/progressBarStyle"-->
+    <!--                    android:layout_width="@dimen/dimen_50dp"-->
+    <!--                    android:layout_height="@dimen/dimen_50dp"-->
+    <!--                    android:layout_centerInParent="true"-->
+    <!--                  />-->
+
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_below="@+id/progrees_vid1"-->
+    <!--                    android:layout_centerHorizontal="true"-->
+    <!--                    android:layout_centerVertical="true"-->
+    <!--                    android:text="uploading..."-->
+    <!--                    android:textAlignment="center"-->
+    <!--                    android:textColor="@color/black_effective"-->
+    <!--                    android:textSize="17sp" />-->
+
+    <!--    </RelativeLayout>-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <!--            <Spinner-->
+    <!--                android:id="@+id/sel_visiblity"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="45dp"-->
+    <!--                android:layout_marginLeft="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginTop="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginRight="@dimen/dimen_20dp"-->
+    <!--                android:background="@drawable/editstyle1" />-->
+
+
+    <!--   <Spinner-->
+    <!--                android:id="@+id/subcat_spinner"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="45dp"-->
+    <!--                android:layout_marginLeft="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginTop="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginRight="@dimen/dimen_20dp"-->
+    <!--                android:background="@drawable/editstyle1" />-->
+
+    <!--            video_catgryy-->
+
+
+    <!--            <Spinner-->
+    <!--                android:id="@+id/sel_cuti_vid"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="45dp"-->
+    <!--                android:layout_marginLeft="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginTop="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginRight="@dimen/dimen_20dp"-->
+    <!--                android:background="@drawable/editstyle1" />-->
+
+
+    <!--   <Spinner-->
+    <!--                android:id="@+id/sel_vid_cat"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="45dp"-->
+    <!--                android:layout_marginLeft="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginTop="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginRight="@dimen/dimen_20dp"-->
+    <!--                android:background="@drawable/editstyle1" />-->
+
+
+    <!--  <Spinner-->
+    <!--                android:id="@+id/agenttype_spinner"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="45dp"-->
+    <!--                android:layout_marginLeft="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginTop="@dimen/dimen_20dp"-->
+    <!--                android:layout_marginRight="@dimen/dimen_20dp"-->
+    <!--                android:background="@drawable/editstyle1" />-->
+
+
+    <!--            Does your video contains any service or product ?-->
+
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/circularProgressbar"-->
+    <!--style="?android:attr/progressBarStyleHorizontal"-->
+    <!--android:layout_width="250dp"-->
+    <!--android:layout_height="250dp"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:indeterminate="false"-->
+    <!--android:max="100"-->
+    <!--android:progress="50"-->
+    <!--android:progressDrawable="@drawable/circular_progress"-->
+    <!--android:secondaryProgress="100" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:background="@drawable/white_box" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv"-->
+    <!--android:layout_width="250dp"-->
+    <!--android:layout_height="250dp"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:gravity="center"-->
+    <!--android:fontFamily="@font/poppins_regular"-->
+    <!--android:text="0%"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textColor="@color/AppBlue"-->
+    <!--android:textSize="20sp" />-->

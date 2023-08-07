@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:letterSpacing="0.025"
+    android:textColor="#27599B"
+    android:textStyle="bold"
+    android:padding="@dimen/_10sdp"
+    android:background="@drawable/spinner_item_divider"
+    android:fontFamily="@font/poppins_regular"/>
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:paddingLeft="7dp"-->
+<!--    android:textSize="15sp"-->
+<!--    android:letterSpacing="0.025"-->
+<!--    android:textStyle="bold"-->
+<!--    android:fontFamily="@font/poppins_regular"-->
+<!--    android:textColor="@color/AppBlue" />-->

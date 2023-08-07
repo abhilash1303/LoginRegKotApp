@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/tool_txtxxx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/my_courses"
+            android:textColor="@color/colorBackground"
+            android:textSize="18sp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/vidlist_shimmer" />
+            <include layout="@layout/vidlist_shimmer" />
+            <include layout="@layout/vidlist_shimmer" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_learn_imagess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/nodata_mycrs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/no_dat_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/nodata" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_dat_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="No Courses...."
+            android:textColor="@color/black_effective"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+
+<!--&lt;!&ndash;    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/swipe_refresh"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_behavior="@string/appbar_scrolling_view_behavior">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;        <androidx.core.widget.NestedScrollView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/ns_touch"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginBottom="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:animateLayoutChanges="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:fillViewport="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:scrollbars="none">&ndash;&gt;-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:orientation="vertical">-->
+
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/blur_reg1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:alpha="0.7"-->
+<!--                    android:background="#FFFFFF"-->
+<!--                    android:visibility="gone">-->
+
+<!--                    <ProgressBar-->
+<!--                        android:id="@+id/progressBar"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerInParent="true" />-->
+<!--                </RelativeLayout>-->
+
+
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/rv_learn_cats"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:layout_margin="5dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_learn_imgs"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:fontFamily="@font/poppins_regular"-->
+<!--                    android:padding="3dp"-->
+<!--                    android:text="My Courses"-->
+<!--                    android:textColor="@color/black_effective"-->
+<!--                    android:textSize="15sp" />-->
+
+
+<!--                <com.facebook.shimmer.ShimmerFrameLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/shimmer">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <include layout="@layout/vidlist_shimmer"/>-->
+<!--                        <include layout="@layout/vidlist_shimmer"/>-->
+<!--                        <include layout="@layout/vidlist_shimmer"/>-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </com.facebook.shimmer.ShimmerFrameLayout>-->
+
+<!--            </LinearLayout>-->
+
+
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rv_learn_imagess"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="?attr/actionBarSize"-->
+<!--        android:layout_marginTop="?attr/actionBarSize"-->
+<!--        android:layout_marginStart="5dp"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_marginEnd="5dp"-->
+<!--        />-->
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/nodata_mycrs"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="#fff"-->
+<!--        android:visibility="gone">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/no_dat_img"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:background="@drawable/nodata" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/no_dat_img"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:fontFamily="@font/poppins_regular"-->
+<!--            android:text="No data...."-->
+<!--            android:textColor="@color/black_effective"-->
+<!--            android:textSize="18sp" />-->
+<!--    </RelativeLayout>-->
+
+
+
+
+
+<!--</RelativeLayout>-->

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:elevation="10dp"
+        android:id="@+id/card_learn"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:padding="5dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linar1">
+
+
+
+                <TextView
+                    android:id="@+id/videoTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="2"
+                    android:textColor="@color/black_effective"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:fontFamily="@font/nunito_regular"
+                    android:padding="@dimen/dimen_5dp"
+                    android:textSize="15sp"
+                    />
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="3dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:background="@color/grayy"/>-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp">
+
+
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/vids_crs"
+                        android:textSize="12sp"
+                        android:text="Show Videos"
+                        android:background="@drawable/bg_blue"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                         />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@+id/linar1"
+                android:visibility="gone"
+                android:text=""
+                />
+
+            <TextView
+                android:id="@+id/idd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_below="@+id/textView2"
+                android:visibility="gone"
+                android:text=""
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile_view"
+            android:icon="@drawable/profile_icon"
+            android:title="@string/profile_view" />
+
+        <item
+            android:id="@+id/nav_cncted_bizlist"
+            android:icon="@drawable/profile_icon"
+            android:title="@string/my_courses" />
+
+
+        <item
+            android:id="@+id/tracktask"
+            android:icon="@drawable/relation_icon"
+            android:title="@string/my_connected_list" />
+
+        <item
+            android:id="@+id/nav_mang_vids"
+            android:icon="@drawable/play_button"
+            android:title="@string/manage_video"
+            android:visible="false" />
+
+
+        <item
+            android:id="@+id/nav_subs"
+            android:icon="@drawable/ic_subscrt1"
+            android:title="@string/supporterslist" />
+
+        <item
+            android:id="@+id/nav_spr_sprtr"
+            android:icon="@drawable/ic_subscrt1"
+            android:title="@string/supr_sprtd_chns" />
+
+
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/privacy"
+            android:title="@string/privacy_policy" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about_icon"
+            android:title="@string/terms" />
+
+        <item
+            android:id="@+id/nav_paid_terms"
+            android:icon="@drawable/privacy"
+            android:title="@string/paid_terms" />
+
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/rate_icon"
+            android:title="@string/rate_app" />
+
+        <item
+            android:id="@+id/nav_referfrnd"
+            android:icon="@drawable/ic_person_black"
+            android:title="@string/refer_your_friends" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/log_out" />
+    </group>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share_icon"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/nav_invite"
+                android:icon="@drawable/invitee"
+                android:title="@string/invite" />
+
+        </menu>
+    </item>
+
+</menu>

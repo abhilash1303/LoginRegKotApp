@@ -1,0 +1,287 @@
+<resources>
+    <string name="app_name">NationLearns</string>
+    <string name="nationlearns_india_s_best_video_learning_app">Nationlearns Indias best video learning app</string>
+    <string name="watch_learn_connect_earn">Watch !! Learn !! Connect !!</string>
+    <string name="powered_by">Powered By</string>
+    <!--    <string name="razi_global_technologies_pvt_ltd">Raha Global Ventures Pvt. Ltd.</string>-->
+    <string name="razi_global_technologies_pvt_ltd">Razi Global Technologies Pvt. Ltd.</string>
+    <string name="retry">Retry</string>
+
+    <string name="b_home">Watch</string>
+    <string name="b_dashh">Dashboard</string>
+
+    <string name="supr_sprt_earn">Super Support Earnings</string>
+    <string name="brand_earn">Brand Earnings</string>
+
+    <string name="b_cutiess">Cuties</string>
+    <string name="b_experts">Experts</string>
+    <string name="b_profile">Profile</string>
+    <string name="assct_profile">Associate Profile</string>
+    <string name="b_subscrib">Subscription</string>
+    <string name="b_financ">Finance</string>
+    <string name="home">Home</string>
+    <string name="welcome_to_nation_learns">Welcome to Nation Learns</string>
+    <string name="_91">+91</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="buttonSave">Save</string>
+    <string name="vid_title">Video Title</string>
+    <string name="descc">Describe your video</string>
+
+    <string name="nation_learnss">Nation Learns</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="Submit">Submit</string>
+    <string name="logout">Logout</string>
+    <string name="type_to_search">Type to Search</string>
+    <string name="string_item_name">Item Name</string>
+    <string name="not_found">Not Found!</string>
+
+    <string name="find_lsp">Find Your Local Service Provider</string>
+    <string name="video">""</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="prod_n_lang">Select Product and language</string>
+
+    <string name="coursess">Courses</string>
+    <string name="playlists">Playlist</string>
+    <string name="video11">Videos</string>
+    <string name="Pincode">Pincode</string>
+
+    <string name="select_country">Select Country</string>
+    <string name="select_state">Select State</string>
+    <string name="select_city">Select City</string>
+    <string name="u002a">*</string>
+    <string name="Marry">Marital Status</string>
+    <string name="earn">Earn</string>
+    <string name="learn">Learn</string>
+    <string name="others">Others</string>
+    <string name="connect">Connect</string>
+    <string name="submit">Submit</string>
+    <string name="catalog_img">Catalogue Image</string>
+    <string name="are_you_sure_want_to_delete_addon">Are you sure you want to delete?</string>
+    <string name="any_pay_refund">Any amount paid is non refundable</string>
+
+    <string name="ourCareTextView4">+91-80-4748-5151</string>
+
+    <string name="rta_dialog_title">Rate Nation Learns app</string>
+    <string name="rta_dialog_message">If you enjoy using this app, would you mind taking a moment to rate it? It would not take more than a minute. Thank you for your support!</string>
+    <string name="rta_dialog_ok">Rate now</string>
+    <string name="rta_dialog_cancel">Later</string>
+    <string name="cancel">Cancel</string>
+    <string name="rta_dialog_no">No, thanks</string>
+
+    <string name="okay">OK</string>
+    <string name="r_u_sr_del_comment">Are you sure you ant to delete the this?</string>
+    <string name="transac_histry">Transaction History</string>
+    <string name="supporterslist">My Supported Channels</string>
+    <string name="supr_sprtd_chns">My Super Supported Channels</string>
+    <string name="track_selection_title">Video Quality</string>
+    <string name="exo_track_selection_title_video">Video</string>
+    <string name="exo_track_selection_title_audio">Audio</string>
+    <string name="exo_track_selection_title_text">Text</string>
+
+    <string name="action_supportt">My Supported Videos</string>
+    <string name="action_ssupportt">My Super Supported Videos</string>
+    <string name="action_mychnl">My Channel</string>
+    <string name="action_svdvds">Saved Videos</string>
+    <string name="action_myvds">My Videos</string>
+    <string name="creater_zonee">Creator Zone</string>
+    <string name="instrtcr_zonee">Instructor Zone</string>
+    <string name="action_myvidplst">My Video Playlist</string>
+    <string name="action_mypstsrch">Past Search</string>
+    <string name="action_wtchwshlst">Watch Wishlist</string>
+    <string name="action_crtrrnking">Creator Ranking</string>
+
+    <string name="mysavedvids">Saved Videos</string>
+
+    <string name="aboutt">About</string>
+    <string name="sprt_list">Supporters</string>
+    <string name="spr_sprts">Super Supporters</string>
+
+    <string name="sprt_my">My Supporters</string>
+    <string name="ssprt_my">My Super Supporters</string>
+
+    <string name="terms">Terms and conditions</string>
+    <string name="paid_terms">Paid Service Terms </string>
+
+    <string name="my_chdtlsss">My Channel Details</string>
+    <string name="my_ch_me">My Channel</string>
+    <string name="revenueee">Earnings</string>
+    <string name="cpyrgt">Copyright</string>
+    <string name="wwbbb">Work with Brands</string>
+    <string name="montzn">Monetization</string>
+
+    <string name="toast_message">Playback completed.</string>
+
+    <string name="connected_list">Connected List</string>
+    <string name="my_chnl">Channel Details</string>
+    <string name="create_ch">Create Channel</string>
+
+
+    <string name="clickcc">Click Here</string>
+    <string name="crse_vw">View Course</string>
+    <string name="sub_ctgry">Sub-Category</string>
+    <string name="privcy_plcy">Privacy Policy</string>
+    <string name="missed_cl">Please Give A Missed Call On </string>
+    <string name="missed_cl_num">011–66562838</string>
+
+    <string name="start_your_instructor_journey_with_us">Start your instructor journey with us.</string>
+    <string name="nationrns">https://www.nationlearns.com</string>
+    <string name="instrcur_zn">Start selling your courses on Nation Learns.</string>
+    <string name="visi_web">Visit our Website.</string>
+    <string name="latest_videos">Latest Videos</string>
+    <string name="trnd_videos">Trending Videos</string>
+    <string name="instrcur_prfl">Instructor Profile</string>
+    <string name="my_crses">My Courses</string>
+
+
+    <string name="select_video_category">Select Video Category</string>
+    <string name="cccategory">Select Category</string>
+    <string name="subccategory">Select Sub-Category</string>
+    <string name="eighteenplus">Is your video permissible under the age of 18 ?</string>
+    <string name="visible_for">Visible For</string>
+    <string name="sel_ch">Select Channel</string>
+    <string name="upload_video">Upload Video</string>
+    <string name="thmbnl_img">Upload Thumbnail</string>
+    <string name="sel_lang">Select Language</string>
+    <string name="mange_vid">Manage Videos</string>
+    <string name="anlytvs">Analytics</string>
+    <string name="sssetings">Super Support Settings</string>
+    <string name="overall_stks">OverAll Stats</string>
+    <string name="online_courses">Online Courses</string>
+    <string name="misc_videos">Misc. Videos</string>
+    <string name="your_inrst_videos">Your Interested Videos</string>
+    <string name="supr_sprt_videos">My Supporter Videos</string>
+    <string name="supr_sprt_contnt">Super Support Content</string>
+    <string name="cuties">Cuties</string>
+    <string name="blogss">Blogs</string>
+    <string name="show_more">show more</string>
+    <string name="exciting_coming_soon">Exciting Videos are Coming Soon!</string>
+    <string name="view_transactions">View Transactions</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="my_sprtd_chnl">My Supported Channel</string>
+    <string name="rate_app">Rate App</string>
+    <string name="profile_view">Profile View</string>
+    <string name="my_courses">My Courses</string>
+    <string name="my_connected_list">My Connected List</string>
+    <string name="about_us">About Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="refer_your_friends">Refer Your Friends</string>
+    <string name="log_out">Log Out</string>
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="milestone">Milestone Info</string>
+    <string name="manage_video">Manage Video</string>
+    <string name="crt_biz_ch">Create Business Channel</string>
+    <string name="my_biz_ch">My Business Channel</string>
+
+    <string name="made_in_india_for_world"> "Made in India for WORLD" </string>
+    <string name="all_vids">All Videos</string>
+    <string name="ttl_vds_uploaded">Total Videos Uploaded : </string>
+    <string name="ttl_vds">Total Videos</string>
+    <string name="ttl_vd_vwas">Total Video Views</string>
+    <string name="ttl_ctss">Total Cuties</string>
+    <string name="ttl_cts_uploaded">Total Cuties Uploaded : </string>
+    <string name="ttl_vws">Total views : </string>
+    <string name="highst_vws">Highest views on video : </string>
+    <string name="highst_vws_cts">Highest views on Cutie : </string>
+    <string name="subscription_agreement">By creating this channel you agree to terms of service, creator terms, paid service terms, community guidelines, privacy policy</string>
+    <string name="mls1">1) 20 videos 2000 supporters = Creator badge</string>
+
+    <string name="mls2">* No copyright or IP strike, No voliation of community guidelines.</string>
+    <string name="mls3">* Should have original content in any category.</string>
+    <string name="mls4">2) 40 plus videos, 1 lakh Supporters = Original Creator Badge.</string>
+    <string name="mls5">3) 10 lakh supporters, 100 plus supper supporters = Super Creator.</string>
+    <string name="mls6">4) 20 lakh plus supporters, 5000 plus supper supporters = Legend Creator</string>
+    <string name="mls7">5) More than 10,000 super supporters only = Commercial Creator</string>
+    <string name="note">Important Note</string>
+    <string name="overview">Overview</string>
+    <string name="gender">Gender</string>
+    <string name="dmgrps">Demographics</string>
+    <string name="ernings">Earnings</string>
+    <string name="ag_grp">Age Group</string>
+    <string name="wwb_secur_dstnt">World\'s first and unique way to work directly with the brands where they can advertise their products in organised and secure way.</string>
+    <string name="cuties_ads">Upload your short clips and let brands run their ads in there.</string>
+    <string name="ways_tomake_money">super supporters get loyal paying fans, Deliver awesome exclusive content.</string>
+    <string name="control_earnings">You Control your earnings. Achieve your milestones by building your supporters and super supporters quickly.</string>
+    <string name="entr_prc">Enter Price</string>
+    <string name="price_month">Price to Join Channel/Month</string>
+    <string name="benfts_month">Write the Monthly benefits</string>
+    <string name="price_halfmonth">Price to Join Channel/Half-Yearly</string>
+    <string name="benfts_halfmonth">Write the Half Yearly benefits</string>
+    <string name="price_twlvmonth">Price to Join Channel/Yearly</string>
+    <string name="benfts_twlvmonth">Write the Yearly benefits</string>
+    <string name="entr_benfts">Write the benefits.</string>
+    <string name="statcs">Statistics</string>
+    <string name="stats">Stats</string>
+    <string name="statcs_cnt">Statistics Count</string>
+    <string name="statcs_prcnt">Statistics Percentage</string>
+    <string name="crs_desc">Course Description</string>
+    <string name="descrptn">Description</string>
+    <string name="crs_title">Course Title</string>
+    <string name="crs_tags">Course Tags</string>
+    <string name="crs_rp">Refund Policy</string>
+    <string name="paid">Paid</string>
+    <string name="free">Free</string>
+    <string name="crs_prc">Enter course price</string>
+    <string name="crs_prc_sel">Select course price</string>
+    <string name="crs_dm_sel">Select Days/Months</string>
+    <string name="enter_discnt">Discount in percent</string>
+    <string name="crs_discnt">Discount Price</string>
+    <string name="crs_discnt_prcnt">Discount in %</string>
+    <string name="select_course_category">select course category</string>
+    <string name="select_course">Select Course</string>
+    <string name="select_course_sub_category">select course sub-category</string>
+    <string name="lvl_tags">Level tags</string>
+    <string name="crs_sh_desc">Short Description</string>
+    <string name="reqrmnt">Requirement</string>
+    <string name="days">Enter Days</string>
+    <string name="dayss">Day</string>
+    <string name="months">months</string>
+    <string name="assign_enbls">Assisgnment Enabled</string>
+    <string name="cert_enbls">Certificate Enabled</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="all_chsls">Channels</string>
+    <string name="invite">Invite</string>
+    <string name="go_live">Go live</string>
+    <string name="status">Status</string>
+    <string name="add_announcement">Add Announcement</string>
+    <string name="all_questions">All Questions</string>
+    <string name="all_annmnts">All Announcements</string>
+    <string name="add_question">Add Question</string>
+    <string name="sel_annnce">Announcement</string>
+    <string name="chnl_type">Channel Type</string>
+    <string name="language">Language</string>
+    <!--    <string name="entr_benfts">Write the benefits separated with commas(,)</string>-->
+    <string name="chanl">Channel</string>
+    <string name="crtr">Creator</string>
+    <string name="filter_courses">Filter Courses!</string>
+    <string name="filter_instrctr">Filter Instructor</string>
+    <string name="instrcur">Instructor</string>
+    <string name="ttl_payouts">Total Payouts</string>
+    <string name="search_for_courses">Search for courses!</string>
+    <string name="exciting_crs_soon">Exciting Courses are Coming Soon!</string>
+    <string name="selectAll">Select All</string>
+    <string name="ok">Ok</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="add_professional_photo">Add Professional Photo</string>
+    <string name="thmbnl_img_desc">image description</string>
+    <string-array name="dialog_spinner_values">
+        <item>Kannada</item>
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Malayalam</item>
+        <item>Gujarati</item>
+        <item>Rajasthani</item>
+    </string-array>
+
+
+</resources>

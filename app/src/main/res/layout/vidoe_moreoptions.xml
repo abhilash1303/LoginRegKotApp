@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:orientation="vertical">
+
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="@dimen/_5sdp"-->
+<!--        android:fontFamily="@font/poppins_regular"-->
+<!--        android:padding="@dimen/_5sdp"-->
+<!--        android:text="Save to Watch later"-->
+<!--        android:textStyle="normal" />-->
+
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/grayy" />-->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="More Options"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/dimen_12sp"
+        android:padding="@dimen/_5sdp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:padding="@dimen/_5sdp"
+        android:text="Share"
+        android:id="@+id/btm_share_vid"
+        android:textStyle="normal" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grayy" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:padding="@dimen/_5sdp"
+        android:text="Report"
+        android:id="@+id/btm_report_vid"
+        android:textStyle="normal" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grayy" />
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="@dimen/_5sdp"-->
+<!--        android:fontFamily="@font/poppins_regular"-->
+<!--        android:padding="@dimen/_5sdp"-->
+<!--        android:text="Save to Watch later"-->
+<!--        android:textStyle="normal" />-->
+
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/grayy" />-->
+
+</LinearLayout>

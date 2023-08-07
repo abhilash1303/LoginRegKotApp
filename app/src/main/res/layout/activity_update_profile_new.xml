@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.UpdateProfileActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/tool_back_img"
+                                android:layout_width="@dimen/value_30dp"
+                                android:layout_height="@dimen/value_30dp"
+                                android:layout_alignParentStart="true"
+                                android:padding="5dp"
+                                android:src="@drawable/ic_left_arrow"
+                                app:tint="@color/AppBlue" />
+
+
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="My Profile"
+                                android:textColor="@color/AppBlue"
+                                android:textSize="@dimen/dimen_15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:text="Profile"
+                                android:textColor="@color/AppBlue"
+                                android:textSize="33sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <include
+                    layout="@layout/item_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backgd_app_bl_opp"
+                    android:orientation="vertical">
+
+
+                    <include layout="@layout/item_email" />
+
+                    <include layout="@layout/item_info" />
+
+                    <include layout="@layout/item_pin" />
+
+                    <include layout="@layout/item_gnder" />
+
+                    <include layout="@layout/item_occuptn" />
+
+                    <include layout="@layout/itemmary_sts" />
+
+                    <include layout="@layout/itemmary_age" />
+
+
+
+                    <include layout="@layout/itemmary_sts"
+                        android:visibility="invisible"
+                        />
+
+                </LinearLayout>
+                <!--    </ScrollView>-->
+
+            </LinearLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progressBar_up"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+
+</ScrollView>

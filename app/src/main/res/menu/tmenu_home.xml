@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".homeDemo.WatchActivty">
+
+
+<!--    <item-->
+<!--        android:id="@+id/action_golive"-->
+<!--        android:icon="@drawable/go_livvee"-->
+<!--        android:title="@string/go_live"-->
+<!--        app:showAsAction="always">-->
+
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/action_golive1"-->
+<!--                android:icon="@drawable/go_livvee"-->
+<!--                android:title="@string/go_live"-->
+<!--                />-->
+<!--        </menu>-->
+<!--    </item>-->
+
+
+    <item
+        android:id="@+id/action_golive"
+        android:icon="@drawable/go_livvee"
+        android:orderInCategory="100"
+        android:title="@string/go_live"
+        android:showAsAction="ifRoom|withText"
+        app:showAsAction="always|withText"
+        tools:ignore="AppCompatResource" />
+
+
+
+
+</menu>

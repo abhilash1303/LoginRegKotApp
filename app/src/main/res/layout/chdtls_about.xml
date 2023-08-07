@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:letterSpacing="0.1"
+        android:text="@string/descrptn"
+        android:textColor="@color/black_effective"
+        android:textSize="@dimen/dimen_15sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:background="@color/grayy" />
+
+    <TextView
+        android:id="@+id/desc_abt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black_effective"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:letterSpacing="0.1"
+        android:text="@string/stats"
+        android:textColor="@color/black_effective"
+        android:textSize="@dimen/dimen_15sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:background="@color/grayy" />
+
+
+
+
+    <TextView
+        android:id="@+id/mails_abt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black_effective"
+        android:drawablePadding="@dimen/_5sdp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_wmails" />
+
+
+
+    <TextView
+        android:id="@+id/stats_abt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black_effective"
+        android:drawablePadding="@dimen/_5sdp"
+        app:drawableStartCompat="@drawable/ic_viewss"
+        android:textStyle="bold" />
+
+
+
+
+
+
+</LinearLayout>

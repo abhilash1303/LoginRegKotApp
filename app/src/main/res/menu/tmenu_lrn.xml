@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.LearnActivity">
+
+    <item
+        android:id="@+id/action_crtrzzone"
+        android:title="@string/instrtcr_zonee"
+        app:showAsAction="always"
+        />
+
+
+
+
+</menu>

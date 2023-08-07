@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEDEE1">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/buy_card"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:elevation="@dimen/_3sdp"
+        android:visibility="visible"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg2"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <AutoCompleteTextView
+                android:id="@+id/search_videos"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.8"
+                android:background="@drawable/editstyle1"
+                android:clickable="true"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:focusable="true"
+                android:hint="Search for videos!!!"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <LinearLayout
+                android:id="@+id/ll_filter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/filter_watch"
+                    app:tint="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/txt_leaddrn_catsd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buy_card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:padding="3dp"
+        android:text="@string/exciting_coming_soon"
+        android:textColor="@color/black_effective"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontlscrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_leaddrn_catsd"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp"
+        android:scrollbars="none">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_all_videos"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/all_vids"
+                android:textColor="@drawable/rtext_color" />
+
+            <RadioButton
+                android:id="@+id/rb_latest_videos"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/latest_videos"
+                android:textColor="@drawable/rtext_color" />
+
+
+            <RadioButton
+                android:id="@+id/rb_trnd_videos"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/trnd_videos"
+                android:textColor="@drawable/rtext_color" />
+
+
+            <RadioButton
+                android:id="@+id/rb_action_supportt"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/action_supportt"
+                android:textColor="@drawable/rtext_color" />
+
+
+            <RadioButton
+                android:id="@+id/rb_action_ssupportt"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/action_ssupportt"
+                android:textColor="@drawable/rtext_color" />
+
+
+            <RadioButton
+                android:id="@+id/rb_misc_videos"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/your_inrst_videos"
+                android:textColor="@drawable/rtext_color" />
+
+
+        </RadioGroup>
+
+
+    </HorizontalScrollView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rfhydghfgnm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:elevation="@dimen/_3sdp"
+        android:visibility="gone"
+        app:cardCornerRadius="5dp">
+
+        <Spinner
+            android:id="@+id/all_vid_spinner"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:background="@drawable/bg_teal"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontlscrl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/vidlist_shimmer" />
+
+            <include layout="@layout/vidlist_shimmer" />
+
+            <include layout="@layout/vidlist_shimmer" />
+
+
+        </LinearLayout>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_all_vid_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontlscrl"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/horizontlscrl"
+        android:layout_centerInParent="true"
+        android:background="#fff"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/no_dat_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/nodata" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_dat_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="No data...."
+            android:textColor="@color/black_effective"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

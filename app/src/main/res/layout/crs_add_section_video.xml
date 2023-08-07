@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.courses.CrsAddSection">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tool_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="All Videos"
+            android:textColor="@color/AppBlue"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/add_video_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Add Video"
+            android:layout_gravity="end"
+            android:background="@drawable/bg_blue"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:textSize="18sp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_learn_imagess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:visibility="gone"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/titlee_shimmer" />
+                <include layout="@layout/titlee_shimmer" />
+                <include layout="@layout/titlee_shimmer" />
+                <include layout="@layout/titlee_shimmer" />
+                <include layout="@layout/titlee_shimmer" />
+                <include layout="@layout/titlee_shimmer" />
+                <include layout="@layout/titlee_shimmer" />
+                <include layout="@layout/titlee_shimmer" />
+                <include layout="@layout/titlee_shimmer" />
+                <include layout="@layout/titlee_shimmer" />
+
+
+            </LinearLayout>
+
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/no_dat_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/nodata" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_dat_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="No data...."
+            android:textColor="@color/black_effective"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

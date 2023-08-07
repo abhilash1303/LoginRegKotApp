@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/nllogo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Nationlearns"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".activities.Splash"
+            android:exported="true"
+            android:theme="@style/AppThemee">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.EditProfileNew"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+
+        <activity
+            android:name=".activities.InternetRetry"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginOtpActivityTimer"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.EnterOtpActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+
+        <activity
+            android:name=".activities.LanguageActivityDemo"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.LoginInterestDemo"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+
+
+
+        <activity
+            android:name=".activities.courses.SectionVideoActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+
+        <activity
+            android:name=".activities.courses.CrsAddSection"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.courses.CourseAddTtile"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.courses.TCourseAddVideos"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.courses.TMyCoursePlayVideos"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.courses.TMyCourseVideos"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.courses.UpoadCourse"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+
+        <activity
+            android:name=".activities.courses.AddQuestionActivty"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.courses.AllQuestionActivty"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+
+        <activity
+            android:name=".activities.courses.AddAnncntActivty"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.courses.AllAnnouncementActivty"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.BlogsShowActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.VidViewBarChart"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.CrtrRankActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+
+        <activity
+            android:name=".activities.CreateBizChannel"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.MangeVidActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.HomeDemoActivityCtgry"
+            android:exported="false"
+            android:theme="@style/AppThemee"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+<!--        <activity-->
+<!--            android:name=".activities.CutiesActvtyDrctHm"-->
+<!--            android:exported="false"-->
+<!--            android:theme="@style/AppThemee"-->
+<!--            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />-->
+        <activity
+            android:name=".activities.CutiesActvtyAltered"
+            android:exported="false"
+            android:theme="@style/AppThemee"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+<!--        <activity-->
+<!--            android:name=".activities.CutiesActvtyDrctHm1"-->
+<!--            android:exported="false"-->
+<!--            android:theme="@style/AppThemee"-->
+<!--            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />-->
+        <activity
+            android:name=".activities.WatchActivty"
+            android:exported="false"
+            android:theme="@style/AppThemee"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.SnglChCtsActvt"
+            android:exported="false"
+            android:theme="@style/AppThemee"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.TUploadVidNewActivity1"
+            android:exported="false"
+            android:theme="@style/AppThemee"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+
+        <activity
+            android:name=".activities.TUploadVid"
+            android:exported="false"
+            android:theme="@style/AppThemee"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.TUploadCts"
+            android:exported="false"
+            android:theme="@style/AppThemee"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+
+        <activity
+            android:name=".activities.TUploadVidNewActivityEdit"
+            android:exported="false"
+            android:theme="@style/AppThemee"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.SearchhActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.TCreatChanelActvty"
+            android:exported="false"
+            android:theme="@style/AppThemee"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.CrtrZoneActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.InstructorProfile"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".tandc.AboutUs"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".tandc.NlPaidTerms"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.WatchHistryActivty"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.Forum2"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+
+
+        <activity
+            android:name=".activities.LearnActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.SubCatListActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.ChannelProfileActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.Catgryctivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.ConncetAssctList"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.ConnectedBizList"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.CtsChActivityDirect"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+
+        <activity
+            android:name=".activities.CourseViewActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+
+
+        <activity
+            android:name=".activities.MyCourseViewActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.spotify.MyMusicActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+
+
+        <activity
+            android:name=".activities.MyAllCourseActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+
+
+        <activity
+            android:name=".activities.AsstCntPrfileActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.SubCatListActivity1"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.UpdateProfileActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.SupportersList"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.SuperSupportersList"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.SuperSupprterVidList"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.SupprterVidList"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.TLtstVidsActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.TcrtrRnkingActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.TSavedVidsActivty"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.MyCourseActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.MyCutiesActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.TSprtrChnlPrfl"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.ReferFriendViewActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.TWtchWshlistAcvty"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.SearchCrseActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.ReviewActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.ReferFrnd"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+
+        <activity
+            android:name=".activities.SubCatActivity"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".playerss.PlayerHomeSprtr"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".playerss.PlayerHome"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".playerss.PlayerHomeCr"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".playerss.PlayerHomeww"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".playerss.PlayerSearch"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".playerss.PlayerChVid"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".playerss.PlayerHomeSprSprtr"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".playerss.PlayerHomeLtstVid"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".playerss.PlayerHomeRel"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".playerss.PlayerHomeSvd"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".playerss.PlayerWtchHstry"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.camera.CameraActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.camera.GoLiveActitivy"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="false"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.camera.VideoPreviewActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".activities.camera.UploadVideoActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="false"
+            android:theme="@style/AppThemee" />
+
+
+    </application>
+
+</manifest>

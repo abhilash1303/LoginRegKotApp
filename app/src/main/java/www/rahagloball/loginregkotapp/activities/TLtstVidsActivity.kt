@@ -1,0 +1,96 @@
+package www.rahagloball.loginregkotapp.activities
+
+
+
+//import www.nationlearnsraha.com.Configuration.Config;
+//import www.nationlearnsraha.com.ConstantAndSession.Constants;
+//import www.nationlearnsraha.com.ConstantAndSession.SessionManager;
+//import www.nationlearnsraha.com.Model.GlobalCallback;
+//import www.nationlearnsraha.com.Model.Pojo.crtrreanking.CrDatum;
+//import www.nationlearnsraha.com.Model.Pojo.crtrreanking.CrtrRnkingPojo;
+//import www.nationlearnsraha.com.Model.RetrofitClient;
+//import www.nationlearnsraha.com.R;
+//import www.nationlearnsraha.com.mainpage.adapters.CrtrRnkngAdapter;
+
+
+//import okhttp3.MediaType
+import android.annotation.SuppressLint
+import android.os.Bundle
+import android.view.View
+import android.widget.RelativeLayout
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import retrofit2.Call
+import retrofit2.Response
+import www.rahagloball.loginregkotapp.configuration.Configs
+import www.rahagloball.loginregkotapp.R
+import www.rahagloball.loginregkotapp.SessionManager
+import www.rahagloball.loginregkotapp.adapters.AllVidListAdapterLtst1
+import www.rahagloball.loginregkotapp.constsnsesion.Constants
+import www.rahagloball.loginregkotapp.models.GlobalCallback
+import www.rahagloball.loginregkotapp.models.RetrofitClient
+import www.rahagloball.loginregkotapp.models.ltstvids.LtstVidDatum
+import www.rahagloball.loginregkotapp.models.ltstvids.LtstVidPojo
+
+
+class TLtstVidsActivity constructor() : AppCompatActivity() {
+    private var layoutManager_vidsList: RecyclerView.LayoutManager? = null
+    var rv_all_videos: RecyclerView? = null
+    var manager: SessionManager? = null
+    var token: String? = null
+    var tool_txtxxx: TextView? = null
+    var blur_reg1: RelativeLayout? = null
+    var cr_nodata: RelativeLayout? = null
+    @SuppressLint("SetTextI18n")
+    protected override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_tcrtr_rnking)
+        manager = SessionManager()
+        token = manager?.getPreferences(this, Constants.USER_TOKEN_LRN)
+        rv_all_videos = findViewById<RecyclerView>(R.id.rv_all_videos)
+        blur_reg1 = findViewById<RelativeLayout>(R.id.blur_reg1)
+        //        toolbar = findViewById(R.id.toolbar);
+        cr_nodata = findViewById<RelativeLayout>(R.id.cr_nodata)
+        tool_txtxxx = findViewById<TextView>(R.id.tool_txtxxx)
+        tool_txtxxx?.text = "Latest Videos"
+        layoutManager_vidsList = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        rv_all_videos!!.setLayoutManager(layoutManager_vidsList)
+        getLtstVidVids()
+    }
+
+    private fun getLtstVidVids() {
+        blur_reg1?.visibility = View.VISIBLE
+        val url: String = Configs.BASE_URL2 + "latest-videos"
+        RetrofitClient.getClient().allvidList1(
+            url, "application/json",
+            "Bearer " + token
+        )
+            ?.enqueue(object : GlobalCallback<LtstVidPojo?>(rv_all_videos) {
+                @SuppressLint("SetTextI18n")
+             override   fun onResponse(call: Call<LtstVidPojo?>, response: Response<LtstVidPojo?>) {
+                    blur_reg1?.visibility = View.GONE
+                    try {
+                        val catggryList: List<LtstVidDatum>?=response.body()?.data
+                        if (catggryList != null) {
+                            if (catggryList.isEmpty()) {
+                                rv_all_videos!!.visibility = View.GONE
+                            } else {
+                                rv_all_videos!!.visibility = View.VISIBLE
+                                adapter_vids_list =
+                                    AllVidListAdapterLtst1(catggryList, this@TLtstVidsActivity)
+                                rv_all_videos!!.adapter = adapter_vids_list
+                            }
+                        }
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                    }
+                }
+            })
+    }
+
+    companion object {
+        private var adapter_vids_list: RecyclerView.Adapter<*>? = null
+    }
+}

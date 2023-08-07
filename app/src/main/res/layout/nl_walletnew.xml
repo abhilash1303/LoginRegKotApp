@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="@dimen/_10sdp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:shadowColor="@color/white"
+        android:text="Wallet Recharge"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:textColor="@color/black_effective"
+        android:textSize="@dimen/dimen_15sp"
+        android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/view_tranx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_teal"
+            android:text="@string/view_transactions"
+            android:gravity="center"
+            android:padding="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@drawable/backgd_wht"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/partialpayment_cf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:background="@drawable/rectangle_box"
+            android:hint="@string/enter_amount"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:padding="@dimen/dimen_10dp"
+            android:text=""
+            android:textSize="@dimen/dimen_15sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="right"
+            android:shadowColor="@color/white"
+            android:text="@string/any_pay_refund"
+            android:textColor="@color/grayy"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reg1"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="1">
+
+
+
+            <TextView
+                android:id="@+id/cancel_dialog_cf"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:background="@drawable/bg_redd"
+                android:text="CANCEL"
+                android:padding="@dimen/_7sdp"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:id="@+id/submit_dialog_cf"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:background="@drawable/bg_teal"
+                android:text="SUBMIT"
+                android:gravity="center"
+                android:padding="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

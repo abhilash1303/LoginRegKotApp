@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_450sdp"
+    android:background="@color/white"
+    android:padding="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/select_video_category"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/video_catgryy"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:background="@drawable/box_design"
+        android:spinnerMode="dropdown"
+        android:textColor="#27599B" />
+
+
+
+<!--    <com.github.mikephil.charting.charts.BarChart-->
+<!--        android:id="@+id/bar_chart"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_margin="@dimen/_10sdp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:padding="@dimen/_10sdp" />-->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/ttl_vds_uploaded"
+            android:textColor="@color/AppBlue"
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/vds_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/AppBlue"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

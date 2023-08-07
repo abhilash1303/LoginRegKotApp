@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="@dimen/_30sdp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/lngdialog_spinner"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_spinner_background"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="16dp">-->
+
+
+<!--    <Spinner-->
+<!--        android:id="@+id/lngdialog_spinner"-->
+<!--        style="@android:style/Widget.Holo.Light.Spinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/dimen_50dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginLeft="@dimen/dimen_20dp"-->
+<!--        android:layout_marginRight="@dimen/dimen_20dp"-->
+<!--        android:background="@drawable/editstyle_new"-->
+<!--        android:gravity="center"-->
+<!--        android:spinnerMode="dropdown" />-->
+
+
+<!--</LinearLayout>-->

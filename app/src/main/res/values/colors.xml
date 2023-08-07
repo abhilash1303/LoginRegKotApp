@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="light_blue">#0097D3</color>
+
+
+
+    <color name="AppBlue">#164878</color>
+    <color name="AppBlueLight">#B5D1EC</color>
+    <color name="BabyBlueLight">#8AAAE5</color>
+    <color name="AppYellow">#FAAE43</color>
+    <color name="AppYellowLight">#F4D3A5</color>
+
+    <color name="colorBackground">#2E7D32</color>
+    <color name="black_effective_1">#515151</color>
+    <color name="colorTextView">#83898E</color>
+    <color name="colorPrimary">#164878</color>
+    <color name="colorPrimaryDark">#04203A</color>
+    <color name="colorAccent">#6DB0F1</color>
+
+    <color name="colorPrimaryLight">#178284</color>
+
+    <color name="teanBrown">#E1D3A6</color>
+
+    <color name="graylight">#fafafa</color>
+    <color name="cream_one">#fffbe6</color>
+    <color name="tan_orang">#fd5523</color>
+    <color name="light_grn">#b9e4c9</color>
+    <color name="dark_green">#af092d2a</color>
+
+
+    <color name="prio1">#081045</color>
+    <color name="prio2">#080D3A</color>
+    <color name="prio23">#181C42</color>
+    <color name="prio3">#11072E</color>
+    <color name="prio4">#0B1632</color>
+    <color name="prio5">#041916</color>
+    <color name="priotxt">#1B2042</color>
+    <color name="light_teal">#20B6B6</color>
+    <color name="grayy">#E3DFDF</color>
+
+
+    <!--<color name="graylight">#fafafa</color>-->
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+    <color name="bg_screen5">#10DF55</color>
+    <color name="bg_screen6">#DA7028</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+    <color name="dot_dark_screen5">#89B457</color>
+    <color name="dot_dark_screen6">#CA1D62</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+    <color name="dot_light_screen5">#3DAA71</color>
+    <color name="dot_light_screen6">#4B0770</color>
+    <color name="black_effective">#1a1a1a</color>
+    <color name="black_effective_light">#3A3939</color>
+    <color name="blue">#FF1784C7</color>
+    <color name="grey">#C0BDBC</color>
+    <color name="grey3">#8F8C8B</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen5</item>
+        <item>@color/dot_light_screen6</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
+        <item>@color/dot_dark_screen6</item>
+    </array>
+
+
+    <color name="whitealpha">#10FFFFFF</color>
+    <color name="reddd">#DA0C0C</color>
+    <color name="button_green">#47C04D</color>
+    <color name="colorTransparent">#00ff6d00</color>
+
+    <color name="semi_transparent_black">#7f000000</color>
+    <color name="black_transparent">#00000000</color>
+    <color name="soft_white">#f0f0f0</color>
+    <color name="hard_grey">#e4e5e7</color>
+    <color name="soft_grey">#508b999b</color>
+    <color name="text_grey">#727a7c</color>
+    <color name="text_soft_grey">#aab0b0</color>
+    <color name="text_hard_grey">#57585a</color>
+    <color name="colorSpeedBackground">#99ffffff</color>
+    <color name="colorProfileBadge">#008eaa</color>
+
+    <color name="colorPlayerProgressTrack">#55ffffff</color>
+    <color name="colorPlayerProgressFill">@android:color/white</color>
+
+    <color name="colorLike">#e4002b</color>
+    <color name="list_even">#FFF5F5</color>
+    <color name="list_odd">#F3FFFF</color>
+    <color name="list_selected">#455FB6</color>
+
+    <color name="stroke_border">#D7D7D7</color>
+
+    <color name="shimmer_color">#bfbdbd</color>
+</resources>

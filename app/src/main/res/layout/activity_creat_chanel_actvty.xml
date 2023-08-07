@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F5F5"
+    tools:context=".activities.TCreatChanelActvty">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/tool_txtxxx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/create_ch"
+            android:textColor="@color/colorBackground"
+            android:textSize="18sp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/profile_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ch_ban_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/box_design"
+                    android:scaleType="centerCrop" />
+
+                <!--            android:src="@drawable/blur_btm"-->
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/ch_baner_pic"-->
+                <!--                android:layout_width="@dimen/_30sdp"-->
+                <!--                android:layout_height="@dimen/_30sdp"-->
+                <!--                android:layout_marginLeft="20dp"-->
+                <!--                android:layout_marginTop="-30dp"-->
+                <!--                android:background="@drawable/circle_bg"-->
+                <!--                android:backgroundTint="@color/AppBlue"-->
+                <!--                android:drawableTop="@android:drawable/ic_menu_camera"-->
+                <!--                android:textColor="#fff" />-->
+
+
+                <TextView
+                    android:id="@+id/ch_baner_pic"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_bg"
+                    android:backgroundTint="@color/AppBlue"
+                    android:drawableTop="@android:drawable/ic_menu_camera"
+                    android:textColor="#fff" />
+
+            </FrameLayout>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ch_post_profile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="-40dp"
+                android:src="@drawable/usr_picc"
+                app:civ_border_color="@color/AppBlue"
+                app:civ_border_width="2dp" />
+
+
+            <TextView
+                android:id="@+id/ch_edit_profile_pic"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-30dp"
+                android:background="@drawable/circle_bg"
+                android:backgroundTint="@color/AppBlue"
+                android:drawableTop="@android:drawable/ic_menu_camera"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/ch_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_margin="@dimen/dimen_10dp"
+
+                    android:background="@drawable/editstyle_new"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Enter Channel Name"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_10dp"
+                    android:textSize="14dp" />
+
+
+                <EditText
+                    android:id="@+id/ch_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:background="@drawable/editstyle_new"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Write Your Description"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_10dp"
+                    android:textSize="14dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:letterSpacing="0.1"
+                        android:text="@string/select_country"
+                        android:textColor="@color/black_effective"
+                        android:textStyle="bold" />
+
+
+                    <www.rahagloball.loginregkotapp.srchspinr.SearchableSpinner
+                        android:id="@+id/countrySpinnerSearch"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        android:background="@drawable/editstyle_new"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#27599B" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:letterSpacing="0.1"
+                        android:text="@string/select_state"
+                        android:textColor="@color/black_effective"
+                        android:textStyle="bold" />
+
+
+                    <www.rahagloball.loginregkotapp.srchspinr.SearchableSpinner
+                        android:id="@+id/stateSpinnerSearch"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        android:background="@drawable/editstyle_new"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#27599B" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:letterSpacing="0.1"
+                        android:text="@string/select_city"
+                        android:textColor="@color/black_effective"
+                        android:textStyle="bold" />
+
+
+                    <www.rahagloball.loginregkotapp.srchspinr.SearchableSpinner
+                        android:id="@+id/citySpinnerSearch"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        android:background="@drawable/editstyle_new"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#27599B" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/chnl_type"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <Spinner
+                    android:id="@+id/sel_visiblity"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:background="@drawable/editstyle_new"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#27599B" />
+
+
+                <CheckBox
+                    android:id="@+id/terms_promo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:buttonTint="@color/AppBlue"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="start"
+                    android:text="@string/subscription_agreement"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/ch_photo_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

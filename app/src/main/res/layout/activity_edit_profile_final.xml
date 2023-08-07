@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditProfileNew">
+
+    <!--    <androidx.drawerlayout.widget.DrawerLayout-->
+    <!--        android:id="@+id/drawer_layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:fitsSystemWindows="true"-->
+    <!--        tools:openDrawer="start">-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_prpl"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_20dp">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+
+                <TextView
+                    android:id="@+id/tool_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_left_arrow"
+                    android:drawablePadding="@dimen/dimen_10dp"
+                    android:drawableTint="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Edit Profile"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="@dimen/dimen_20dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfilePic"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/usr_picc"
+                    android:foregroundGravity="center" />
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="top|center"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="90dp"
+                    android:background="@drawable/circle_bg"
+                    android:drawableTop="@drawable/edit_icon"
+                    app:fabSize="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnEdit"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/add_professional_photo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_15sp"
+
+                    android:textStyle="bold">
+
+                </TextView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative1"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tx1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:text="Full Name"
+                    android:textSize="@dimen/dimen_15sp"
+
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/associt_namee"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:background="@drawable/editstyle_new"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Enter Name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="2"
+                    android:padding="@dimen/dimen_10dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:text="Email"
+                    android:textSize="@dimen/dimen_15sp"
+
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/associte_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:background="@drawable/editstyle_new"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Enter email"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_10dp"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:text="Occupation"
+                    android:textSize="@dimen/dimen_15sp"
+
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+                <Spinner
+                    android:id="@+id/associte_occuptn"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:background="@drawable/editstyle_new"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:text="Password"
+                    android:textSize="@dimen/dimen_15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPasswordLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:background="@drawable/editstyle_new"
+                    android:hint="Pwd"
+                    app:boxBackgroundColor="@color/white"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/editstyle_new"
+                        android:fontFamily="@font/poppins_regular"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:text="@string/confirm_password"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_15sp"
+
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPasswordLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:hint="Confirm pwd"
+                    app:boxBackgroundColor="@color/white"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cnfrm_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/editstyle_new"
+                        android:fontFamily="@font/poppins_regular"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--                    <EditText-->
+                <!--                        android:id="@+id/associte_occuptn"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginStart="@dimen/dimen_20dp"-->
+                <!--                        android:layout_marginEnd="@dimen/dimen_20dp"-->
+                <!--                        android:background="@drawable/editstyle_new"-->
+                <!--                        android:ems="10"-->
+                <!--                        android:fontFamily="@font/poppins_regular"-->
+                <!--                        android:hint="Enter Occupation"-->
+                <!--                        android:imeOptions="actionNext"-->
+                <!--                        android:inputType="text"-->
+                <!--                        android:maxLines="2"-->
+                <!--                        android:padding="@dimen/dimen_10dp"-->
+                <!--                        android:textSize="14dp" />-->
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:text="@string/marital_status"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_15sp"
+
+                    android:textStyle="bold" />
+
+
+                <Spinner
+                    android:id="@+id/asscit_mary_stats"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:background="@drawable/editstyle_new"
+                    android:spinnerMode="dropdown" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:text="Gender"
+                    android:textSize="@dimen/dimen_15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+                <Spinner
+                    android:id="@+id/asscit_gender"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:background="@drawable/editstyle_new"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:text="Age"
+                    android:textSize="@dimen/dimen_15sp"
+
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+                <Spinner
+                    android:id="@+id/asscit_age_spnr"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:background="@drawable/editstyle_new"
+                    android:spinnerMode="dropdown" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:letterSpacing="0.1"
+                        android:text="@string/select_country"
+                        android:textSize="@dimen/dimen_15sp"
+
+                        android:textColor="@color/black_effective"
+                        android:textStyle="bold" />
+
+
+                    <www.rahagloball.loginregkotapp.srchspinr.SearchableSpinner
+                        android:id="@+id/countrySpinnerSearch"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        android:background="@drawable/editstyle_new"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#27599B" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:letterSpacing="0.1"
+                        android:text="@string/select_state"
+                        android:textColor="@color/black_effective"
+                        android:textStyle="bold" />
+
+
+                    <www.rahagloball.loginregkotapp.srchspinr.SearchableSpinner
+                        android:id="@+id/stateSpinnerSearch"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        android:background="@drawable/editstyle_new"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#27599B" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:letterSpacing="0.1"
+                        android:text="@string/select_city"
+                        android:textColor="@color/black_effective"
+                        android:textStyle="bold" />
+
+
+                    <www.rahagloball.loginregkotapp.srchspinr.SearchableSpinner
+                        android:id="@+id/citySpinnerSearch"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        android:background="@drawable/editstyle_new"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#27599B" />
+                </LinearLayout>
+
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tx2"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginLeft="@dimen/dimen_20dp"-->
+                <!--                    android:layout_marginTop="@dimen/dimen_10dp"-->
+                <!--                    android:layout_marginRight="@dimen/dimen_20dp"-->
+                <!--                    android:text="State"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textStyle="bold">-->
+
+                <!--                </TextView>-->
+
+                <!--                <Spinner-->
+                <!--                    android:id="@+id/state_spinner"-->
+                <!--                    style="@android:style/Widget.Holo.Light.Spinner"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="@dimen/dimen_50dp"-->
+                <!--                    android:layout_marginLeft="@dimen/dimen_20dp"-->
+                <!--                    android:layout_marginRight="@dimen/dimen_20dp"-->
+                <!--                    android:background="@drawable/editstyle_new"-->
+                <!--                    android:spinnerMode="dropdown" />-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tx3"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginLeft="@dimen/dimen_20dp"-->
+                <!--                    android:layout_marginTop="@dimen/dimen_10dp"-->
+                <!--                    android:layout_marginRight="@dimen/dimen_20dp"-->
+                <!--                    android:text="City"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textStyle="bold" />-->
+
+
+                <!--                <Spinner-->
+                <!--                    android:id="@+id/city_spinner"-->
+                <!--                    style="@android:style/Widget.Holo.Light.Spinner"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="@dimen/dimen_50dp"-->
+                <!--                    android:layout_marginLeft="@dimen/dimen_20dp"-->
+                <!--                    android:layout_marginRight="@dimen/dimen_20dp"-->
+                <!--                    android:background="@drawable/editstyle_new"-->
+                <!--                    android:spinnerMode="dropdown" />-->
+
+
+                <TextView
+                    android:id="@+id/tx4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:text="Pincode"
+                    android:textColor="@color/white"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+                <www.rahagloball.loginregkotapp.multispinnerrr.MultiSpinnerSearch
+                    android:id="@+id/pincode"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:background="@drawable/editstyle_new"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#27599B"
+                    app:hintText="Choose Pincode" />
+
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/pincode"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="@dimen/dimen_50dp"-->
+                <!--                    android:layout_marginStart="@dimen/dimen_20dp"-->
+                <!--                    android:layout_marginEnd="@dimen/dimen_20dp"-->
+                <!--                    android:background="@drawable/editstyle_new"-->
+                <!--                    android:ems="10"-->
+                <!--                    android:fontFamily="@font/poppins_regular"-->
+                <!--                    android:hint="Enter Pincode"-->
+                <!--                    android:imeOptions="actionDone"-->
+                <!--                    android:inputType="number"-->
+                <!--                    android:maxLines="1"-->
+                <!--                    android:padding="@dimen/dimen_10dp"-->
+                <!--                    android:textSize="14dp" />-->
+
+
+                <TextView
+                    android:id="@+id/tx5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:text="Select Your Service"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:visibility="gone">
+
+                </TextView>
+
+                <!--                    <LinearLayout-->
+                <!--                        android:id="@+id/agenttype"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginLeft="@dimen/dimen_20dp"-->
+                <!--                        android:layout_marginTop="@dimen/dimen_10dp"-->
+                <!--                        android:layout_marginRight="@dimen/dimen_20dp"-->
+                <!--                        android:orientation="vertical"-->
+                <!--                        android:textColor="#555">-->
+
+                <Spinner
+                    android:id="@+id/agenttype_spinner"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:background="@drawable/editstyle_new"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#27599B"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/subcat_spinner"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:background="@drawable/editstyle_new"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#27599B"
+                    android:visibility="gone" />
+
+
+                <!--                    </LinearLayout>-->
+
+
+                <Button
+                    android:id="@+id/profileSave"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_50dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/button2"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/Submit"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grayy"
+        android:alpha="0.5"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/Bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="@dimen/value_80dp"
+            android:layout_height="@dimen/value_80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp"
+            >
+
+        </ProgressBar>
+    </RelativeLayout>
+
+    <!--    </androidx.drawerlayout.widget.DrawerLayout>-->
+
+</RelativeLayout>

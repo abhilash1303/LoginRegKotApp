@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/grayy"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/earn"
+            android:textColor="@color/AppBlue"
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_cts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardElevation="@dimen/_8sdp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_prpl"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_5sdp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_5sdp">
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/dimen_14sp"
+                                        android:textStyle="normal" />
+
+
+                                    <TextView
+                                        android:id="@+id/cts_higt_vws"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/dimen_18sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+
+                                <include layout="@layout/vid_view_bar_chartcts" />
+
+                                <TextView
+                                    android:id="@+id/titleshowcts"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:text="Title"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/dimen_14sp"
+                                    android:textStyle="normal"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/highest_cts_title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:background="@drawable/app_bg_clr"
+                                    android:ellipsize="marquee"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/_5sdp"
+                                    android:text=""
+                                    android:textColor="@color/AppBlue"
+                                    android:textSize="@dimen/dimen_15sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/cts_view_graph"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:background="@drawable/bg1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:padding="@dimen/_5sdp"
+                            android:text="view more"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <Spinner
+                        android:id="@+id/cnt_prcntg_spnr"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        android:visibility="gone"
+                        android:background="@drawable/editstyle_new"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#27599B" />
+
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="5dp"
+                        android:showDividers="middle"
+
+                        android:divider="@drawable/divider_ss"
+                        android:paddingRight="5dp">
+
+                        <TextView
+                            android:id="@+id/txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Earnings in %"
+                            android:textSize="20dp"
+                            android:textColor="@color/AppBlue"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TableRow
+                            android:background="#1976D2"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:padding="10dp">
+
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:text="Brand Earnings"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/dimen_13sp"
+                                android:textStyle="normal" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ellipsize="start"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="Super Supporter Earnings"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/dimen_13sp"
+                                android:textStyle="normal" />
+
+
+                        </TableRow>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="#0097A7"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Male"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TableRow
+                            android:background="#F0F7F7"
+                            android:padding="5dp">
+
+
+
+                            <TextView
+                                android:id="@+id/tr_sprts_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tr_spr_sprts_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:text="100"
+                                android:textStyle="bold" />
+
+
+                        </TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="#0097A7"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Female"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

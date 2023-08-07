@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@drawable/filter_box"
+    tools:context=".activities.ReferFrnd">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="#F3F0F0"
+        android:elevation="10dp"
+        app:cardCornerRadius="5dp">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Refer Your Friends"
+                android:textColor="#D61F1F"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/textView5"
+                android:src="@drawable/reffriend">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Refer Your Three Friends And Get Rs. 10 Google Pay."
+                android:textColor="#6F2477"
+                android:textSize="15dp" />
+            <View
+                android:id="@+id/viewDividera1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/textView7"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="20dp" />
+
+
+            <View
+                android:id="@+id/viewDividera"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/textView5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="155dp"
+                android:layout_marginRight="20dp" />
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/viewDividera"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/filter_box_primary"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Name"
+                android:paddingLeft="15dp"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:id="@+id/lin_hor"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/editText"
+                android:background="@drawable/filter_box_primary">
+
+            <EditText
+
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:backgroundTint="#00000000"
+                android:textSize="14dp" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/contact_list"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginLeft="85dp"-->
+
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:src="@drawable/ic_contact_phone_black"/>-->
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@+id/lin_hor"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/filter_box_primary"
+                android:fontFamily="@font/poppins_regular"
+                android:hint=" Write Comment"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:textSize="17dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/rel_setappoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comment"
+                android:layout_marginTop="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                <Button
+                    android:id="@+id/refer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_background_blue"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:text="Submit"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/Referedview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/refer"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:background="@drawable/button3"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="View Refered Friends"
+                    android:textColor="#fff"/>
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="140dp"
+            android:visibility="gone"></ProgressBar>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".homeDemo.WatchActivty">
+
+
+    <item
+        android:id="@+id/action_golive"
+        android:icon="@drawable/go_livvee"
+        android:title="@string/go_live" />
+
+    <item
+        android:id="@+id/action_supportt"
+        android:title="@string/action_supportt"
+
+        />
+
+    <item
+        android:id="@+id/action_ssupportt"
+        android:title="@string/action_ssupportt" />
+
+    <item
+        android:id="@+id/action_svdvds"
+        android:title="@string/action_svdvds" />
+
+
+    <item
+        android:id="@+id/action_mychnl"
+        android:visible="false"
+        android:title="@string/my_chdtlsss" />
+
+    <item
+        android:id="@+id/action_crtrzzone"
+        android:title="@string/creater_zonee"
+        app:showAsAction="always"
+        />
+
+
+    <item
+        android:id="@+id/action_mypstsrch"
+        android:title="@string/action_mypstsrch" />
+
+    <item
+        android:id="@+id/action_wtchwshlst"
+        android:title="@string/action_wtchwshlst" />
+
+    <item
+        android:id="@+id/action_crtrrnking"
+        android:title="@string/action_crtrrnking" />
+
+
+</menu>

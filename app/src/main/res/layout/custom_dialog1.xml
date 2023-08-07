@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<www.rahagloball.loginregkotapp.progrescustm.TCustomProgesBr
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorTransparent"
+    android:layout_width="wrap_content"
+    app:indicatorName="LineScalePulseOutIndicator"
+    app:indicatorColor="@color/AppBlue"
+    android:layout_height="wrap_content">
+</www.rahagloball.loginregkotapp.progrescustm.TCustomProgesBr>
